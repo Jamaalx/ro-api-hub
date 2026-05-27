@@ -7,7 +7,7 @@ ro-api-hub e un proiect community-owned. Orice contribuție e binevenită — de
 
 ## Adaugă un API nou
 
-1. Fork repo-ul de pe [GitHub](https://github.com/zed-zen/ro-api-hub)
+1. Fork repo-ul de pe [GitHub](https://github.com/Jamaalx/ro-api-hub)
 2. Copiază `templates/api-service.md` într-un fișier nou în `src/content/docs/apis/{public|private|aggregators|community}/{categorie}/`
 3. Completează toate câmpurile din YAML frontmatter (vezi schema în `src/content.config.ts`)
 4. Adaugă cel puțin: Overview, Endpoints, Authentication, un Request example funcțional, Known issues

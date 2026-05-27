@@ -10,7 +10,7 @@ hero:
       icon: right-arrow
       variant: primary
     - text: GitHub
-      link: https://github.com/zed-zen/ro-api-hub
+      link: https://github.com/Jamaalx/ro-api-hub
       icon: external
       variant: secondary
 ---

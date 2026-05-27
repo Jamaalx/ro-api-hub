@@ -13,7 +13,7 @@ export default defineConfig({
         root: { label: 'Română', lang: 'ro' },
       },
       social: [
-        { icon: 'github', label: 'GitHub', href: 'https://github.com/zed-zen/ro-api-hub' },
+        { icon: 'github', label: 'GitHub', href: 'https://github.com/Jamaalx/ro-api-hub' },
       ],
       plugins: [
         starlightLlmsTxt({
