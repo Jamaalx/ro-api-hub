@@ -1,0 +1,18 @@
+# ai.txt — purpose-based AI permissions for ro-api-hub
+# Spec: https://site.spawning.ai/spawning-ai-txt
+# Also covers EU Copyright Directive Art. 4 TDM opt-in declaration.
+
+User-Agent: *
+
+# We explicitly OPT IN to all uses below.
+# This is public technical documentation; we want maximum reach via AI tools.
+
+Allow-Training: yes
+Allow-Inference: yes
+Allow-Search: yes
+Allow-RAG: yes
+
+# License: MIT for code, CC-BY-4.0 for documentation content.
+# Attribution: link to https://ro-api-hub.dev or cite "ro-api-hub".
+
+Contact: https://github.com/zed-zen/ro-api-hub/issues
