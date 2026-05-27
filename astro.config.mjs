@@ -8,10 +8,9 @@ export default defineConfig({
     starlight({
       title: 'ro-api-hub',
       description: 'The comprehensive open-source library of Romanian APIs — keys, sandbox credentials, OpenAPI specs, SDKs, tutorials and MCP wrappers in one place.',
-      defaultLocale: 'ro',
+      defaultLocale: 'root',
       locales: {
-        ro: { label: 'Română', lang: 'ro' },
-        en: { label: 'English', lang: 'en' },
+        root: { label: 'Română', lang: 'ro' },
       },
       social: [
         { icon: 'github', label: 'GitHub', href: 'https://github.com/zed-zen/ro-api-hub' },
@@ -32,7 +31,8 @@ export default defineConfig({
       ],
       sidebar: [
         { label: 'Start aici', items: [
-          { label: 'Despre proiect', slug: 'index' },
+          { label: 'Despre proiect', link: '/' },
+          { label: 'Catalog complet', link: '/apis/' },
           { label: 'Cum contribui', slug: 'contributing' },
           { label: 'Pentru AI agents', slug: 'ai-agents' },
         ]},

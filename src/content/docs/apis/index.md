@@ -1,4 +1,9 @@
-# ro-api-hub — Master Index
+---
+title: Catalog complet (master index)
+description: 124 servicii API românești în 27 de categorii — status, autentificare, endpoint-uri și linkuri către fișa fiecăruia.
+sidebar:
+  order: 0
+---
 
 > 124 per-service MDs across 27 categories. One file per API/service. All use the YAML frontmatter schema in `../templates/api-service.md` — parsable by downstream agents (Playwright probes, OpenAPI generators, MCP wrappers, tutorial pipelines).
 

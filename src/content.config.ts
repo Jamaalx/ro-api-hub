@@ -18,7 +18,7 @@ export const collections = {
         institution: z.string().optional(),
         country: z.string().default('RO').optional(),
         status: z.enum(['active', 'stale', 'broken', 'suspended', 'gated']).optional(),
-        verified_at: z.string().optional(),
+        verified_at: z.coerce.string().optional(),
         auth: z.string().optional(),
         protocol: z.string().optional(),
         openapi_spec: z.union([z.boolean(), z.literal('partial')]).optional(),
