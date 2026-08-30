@@ -1,5 +1,7 @@
 # ro-api-hub
 
+[![Build](https://github.com/Jamaalx/ro-api-hub/actions/workflows/build.yml/badge.svg)](https://github.com/Jamaalx/ro-api-hub/actions/workflows/build.yml)
+
 The comprehensive open-source library of Romanian APIs — keys, sandbox credentials, OpenAPI specs, SDKs, tutorials and MCP wrappers, in one place.
 
 > **Built like:** BrasilAPI + RapidAPI + Mintlify — but for Romania.
