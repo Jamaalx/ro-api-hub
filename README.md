@@ -49,8 +49,8 @@ Read [`AGENTS.md`](./AGENTS.md) + `src/content/docs/contributing.md`. TL;DR: cop
 
 ## License
 
-- **Code**: MIT
-- **Documentation content**: CC-BY-4.0 (attribution to ro-api-hub or this repo)
+- **Code** (Astro site, scripts, config): [MIT](./LICENSE) — © 2026 Alex Mantello (ZED-ZEN)
+- **Catalogue content** (the per-service descriptions in `src/content/docs/`): [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) — attribute to "ro-api-hub" with a link to this repo
 
 ## Acknowledgements
 
