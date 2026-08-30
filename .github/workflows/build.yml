@@ -4,6 +4,17 @@ on:
   push:
     branches: [main]
   pull_request:
+  schedule:
+    # Weekly, Monday 06:00 UTC — proves the build still works as deps/content age.
+    - cron: '0 6 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: build-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   build:
@@ -16,6 +27,13 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build
+      - name: Sanity-check output
+        run: |
+          test -f dist/index.html
+          test -f dist/apis/index.html
+          test -f dist/llms.txt
+          test -f dist/llms-full.txt
+          echo "service pages: $(find dist -mindepth 2 -name index.html | wc -l)"
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
         with:
