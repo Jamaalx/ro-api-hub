@@ -14,6 +14,8 @@ The comprehensive open-source library of Romanian APIs — keys, sandbox credent
 
 ## Quick start (local development)
 
+Requires Node 22.12+ (Astro 7).
+
 ```bash
 npm install
 npm run dev   # → http://localhost:4321
@@ -21,11 +23,13 @@ npm run dev   # → http://localhost:4321
 
 ## What's included
 
-- ✅ **67 active APIs** verified recent
-- 🔒 18 gated (contract / cert / WAF) — with access instructions
-- ⚠️ 18 stale — flagged with alternatives
-- ❌ 14 with no public API — scraping patterns documented as fallback
-- 🚨 3 critical incidents (RAR Auto Pass suspended, ASF URL broken, etc.)
+Counts from the `status:` frontmatter of the 124 service files (verified 2026-08-30):
+
+- ✅ **91 active** APIs
+- 🔒 9 gated (contract / cert / WAF) — with access instructions
+- ⚠️ 10 stale — flagged with alternatives
+- ❌ 13 with no public API — scraping patterns documented as fallback
+- 🚨 1 suspended (RAR Auto Pass) — plus other incidents (e.g. ASF URL broken) noted per service
 
 ## Categories (27)
 
@@ -39,7 +43,7 @@ npm run dev   # → http://localhost:4321
 
 Every page is also served as `/llms.txt` and `/llms-full.txt`. Category-specific bundles too:
 
-- `/llms-fiscal.txt`, `/llms-finance.txt`, `/llms-banks-psd2.txt`, `/llms-couriers.txt`, `/llms-public.txt`, `/llms-private.txt`
+- `/_llms-txt/fiscal.txt`, `/_llms-txt/finance.txt`, `/_llms-txt/banks-psd2.txt`, `/_llms-txt/couriers.txt`, `/_llms-txt/all-public.txt`, `/_llms-txt/all-private.txt` (all listed in `/llms.txt`)
 
 MCP server at `/mcp` — coming in phase 2.
 
@@ -47,7 +51,16 @@ See [`AGENTS.md`](./AGENTS.md) for contribution rules optimised for AI assistant
 
 ## Contributing
 
-Read [`AGENTS.md`](./AGENTS.md) + `src/content/docs/contributing.md`. TL;DR: copy `templates/api-service.md`, fill the YAML frontmatter, open a PR.
+Read [`AGENTS.md`](./AGENTS.md) + `src/content/docs/contributing.md`. To add a service:
+
+1. Check it doesn't already exist: `grep -ri "<slug>" src/content/docs/apis/`
+2. Copy [`templates/api-service.md`](./templates/api-service.md) to `src/content/docs/apis/{public|private}/{category}/{slug}.md` (or `apis/aggregators/`, `apis/community/`)
+3. Fill in **all** frontmatter fields — the schema in `src/content.config.ts` validates them at build time; `unknown` is allowed, guessing is not
+4. Write the body sections in order: Overview · Endpoints · Authentication · Request example · Response example · Existing SDKs · Testing approach · Known issues / gotchas · Tutorial seeds · ro-api-hub integration plan · References
+5. Set `verified_at:` to the date you actually tested the API
+6. `npm run build` must pass, then open a PR titled `add: {service name}` (or `fix: {service} — {what}` for corrections)
+
+Never fabricate endpoint URLs, version numbers or behaviour. No marketing copy.
 
 ## License
 

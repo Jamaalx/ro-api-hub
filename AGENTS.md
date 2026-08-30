@@ -11,6 +11,7 @@ Built with **Astro Starlight + starlight-llms-txt**.
 ## Common tasks
 
 ```bash
+# Node 22.12+ required (Astro 7)
 npm install     # install deps
 npm run dev     # local dev server (http://localhost:4321)
 npm run build   # production build → ./dist/
