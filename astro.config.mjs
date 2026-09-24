@@ -1,6 +1,24 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import starlightLlmsTxt from 'starlight-llms-txt';
+import { readdirSync, readFileSync } from 'node:fs';
+import { join, relative } from 'node:path';
+
+// Every service file sets a flat `slug:` in its frontmatter, so page ids are
+// `anaf-vat-v9`, not `apis/public/fiscal/anaf-vat-v9`. starlight-llms-txt matches
+// customSets.paths against those ids, so directory globs match nothing — resolve
+// each directory to the list of slugs it contains instead.
+const DOCS = 'src/content/docs';
+function slugsIn(dir) {
+  const out = [];
+  for (const entry of readdirSync(join(DOCS, dir), { withFileTypes: true, recursive: true })) {
+    if (!entry.isFile() || !/\.mdx?$/.test(entry.name)) continue;
+    const file = join(entry.parentPath, entry.name);
+    const slug = readFileSync(file, 'utf8').match(/^slug:\s*['"]?([^'"\s]+)/m)?.[1];
+    out.push(slug ?? relative(DOCS, file).replace(/\.mdx?$/, '').replace(/\/index$/, ''));
+  }
+  return out.sort();
+}
 
 export default defineConfig({
   site: 'https://ro-api-hub.dev',
@@ -20,12 +38,12 @@ export default defineConfig({
           projectName: 'ro-api-hub',
           description: 'Comprehensive catalogue of Romanian APIs (BNR, ANAF, ONRC, banks, couriers, etc.) with endpoints, auth flows, SDKs, OpenAPI specs and MCP wrappers.',
           customSets: [
-            { label: 'Fiscal', description: 'ANAF VAT, e-Factura, e-Transport, SAF-T, SPV, e-TVA', paths: ['apis/public/fiscal/**'] },
-            { label: 'Finance', description: 'BNR, ASF, BVB', paths: ['apis/public/finance/**'] },
-            { label: 'Banks PSD2', description: '10 RO bank Open Banking APIs', paths: ['apis/private/banks/**'] },
-            { label: 'Couriers', description: 'Sameday, FAN, Cargus, DPD, GLS, Innoship', paths: ['apis/private/couriers/**'] },
-            { label: 'All public', description: 'All public-sector RO APIs', paths: ['apis/public/**'] },
-            { label: 'All private', description: 'All private-sector RO APIs', paths: ['apis/private/**'] },
+            { label: 'Fiscal', description: 'ANAF VAT, e-Factura, e-Transport, SAF-T, SPV, e-TVA', paths: slugsIn('apis/public/fiscal') },
+            { label: 'Finance', description: 'BNR, ASF, BVB', paths: slugsIn('apis/public/finance') },
+            { label: 'Banks PSD2', description: '10 RO bank Open Banking APIs', paths: slugsIn('apis/private/banks') },
+            { label: 'Couriers', description: 'Sameday, FAN, Cargus, DPD, GLS, Innoship', paths: slugsIn('apis/private/couriers') },
+            { label: 'All public', description: 'All public-sector RO APIs', paths: slugsIn('apis/public') },
+            { label: 'All private', description: 'All private-sector RO APIs', paths: slugsIn('apis/private') },
           ],
         }),
       ],
