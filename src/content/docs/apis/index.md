@@ -24,119 +24,119 @@ sidebar:
 ### Fiscal (10) — `apis/public/fiscal/`
 | Status | File | Notes |
 |--------|------|-------|
-| ✅ | [anaf-vat-v9](public/fiscal/anaf-vat-v9.md) | Current ANAF VAT/CUI verification |
-| ⚠️ | [anaf-vat-v8-async](public/fiscal/anaf-vat-v8-async.md) | v8 retired 2025-05-01 — migrate to v9 |
-| ✅ | [anaf-efactura-prod](public/fiscal/anaf-efactura-prod.md) | Mandatory B2B; OAuth2 + qualified cert |
-| ✅ | [anaf-efactura-test](public/fiscal/anaf-efactura-test.md) | Sandbox |
-| ✅ | [anaf-etransport](public/fiscal/anaf-etransport.md) | Mandatory; PDF guide stale (use 2025 version) |
-| ✅ | [anaf-oauth2](public/fiscal/anaf-oauth2.md) | Token service for all ANAF APIs |
-| ✅ | [anaf-spv](public/fiscal/anaf-spv.md) | Mailbox: messages between taxpayer and ANAF |
-| ✅ | [anaf-saf-t](public/fiscal/anaf-saf-t.md) | Schema v249, last update 2026-02-19 |
-| ✅ | [anaf-etva](public/fiscal/anaf-etva.md) | Pre-filled VAT returns (new) |
-| 🔒 | [anaf-cazier-fiscal](public/fiscal/anaf-cazier-fiscal.md) | Inter-institutional only |
+| ✅ | [anaf-vat-v9](/anaf-vat-v9/) | Current ANAF VAT/CUI verification |
+| ⚠️ | [anaf-vat-v8-async](/anaf-vat-v8-async/) | v8 retired 2025-05-01 — migrate to v9 |
+| ✅ | [anaf-efactura-prod](/anaf-efactura-prod/) | Mandatory B2B; OAuth2 + qualified cert |
+| ✅ | [anaf-efactura-test](/anaf-efactura-test/) | Sandbox |
+| ✅ | [anaf-etransport](/anaf-etransport/) | Mandatory; PDF guide stale (use 2025 version) |
+| ✅ | [anaf-oauth2](/anaf-oauth2/) | Token service for all ANAF APIs |
+| ✅ | [anaf-spv](/anaf-spv/) | Mailbox: messages between taxpayer and ANAF |
+| ✅ | [anaf-saf-t](/anaf-saf-t/) | Schema v249, last update 2026-02-19 |
+| ✅ | [anaf-etva](/anaf-etva/) | Pre-filled VAT returns (new) |
+| 🔒 | [anaf-cazier-fiscal](/anaf-cazier-fiscal/) | Inter-institutional only |
 
 ### Finance (8) — `apis/public/finance/`
 | Status | File | Notes |
 |--------|------|-------|
-| ✅ | [bnr-fx-today](public/finance/bnr-fx-today.md) | Daily XML, 46 currencies |
-| ✅ | [bnr-fx-10days](public/finance/bnr-fx-10days.md) | |
-| ✅ | [bnr-fx-yearly](public/finance/bnr-fx-yearly.md) | Yearly history per year |
-| ⚠️ | [bnr-interactive-db](public/finance/bnr-interactive-db.md) | Host fix: bnro.ro → bnr.ro |
-| ⚠️ | [bnr-robor](public/finance/bnr-robor.md) | Scrape-only, WAF on PDF |
-| 🚨 | [asf-registers](public/finance/asf-registers.md) | **/en/a/1544/ returns 404** — needs new URL |
-| 🔒 | [bvb-arena-datafeed](public/finance/bvb-arena-datafeed.md) | Paywall (contract) |
-| 🔒 | [bvb-arenaxt](public/finance/bvb-arenaxt.md) | Paywall; protocol PDF v3.1.3 (2019) |
+| ✅ | [bnr-fx-today](/bnr-fx-today/) | Daily XML, 46 currencies |
+| ✅ | [bnr-fx-10days](/bnr-fx-10days/) | |
+| ✅ | [bnr-fx-yearly](/bnr-fx-yearly/) | Yearly history per year |
+| ⚠️ | [bnr-interactive-db](/bnr-interactive-db/) | Host fix: bnro.ro → bnr.ro |
+| ⚠️ | [bnr-robor](/bnr-robor/) | Scrape-only, WAF on PDF |
+| 🚨 | [asf-registers](/asf-registers/) | **/en/a/1544/ returns 404** — needs new URL |
+| 🔒 | [bvb-arena-datafeed](/bvb-arena-datafeed/) | Paywall (contract) |
+| 🔒 | [bvb-arenaxt](/bvb-arenaxt/) | Paywall; protocol PDF v3.1.3 (2019) |
 
 ### Registry (2) — `apis/public/registry/`
 | Status | File | Notes |
 |--------|------|-------|
-| 🔒 | [onrc-recom](public/registry/onrc-recom.md) | Paid bulk access; onrc.ro "under construction" |
-| ⚠️ | [onrc-opendata](public/registry/onrc-opendata.md) | Datasets stale on data.gov.ro |
+| 🔒 | [onrc-recom](/onrc-recom/) | Paid bulk access; onrc.ro "under construction" |
+| ⚠️ | [onrc-opendata](/onrc-opendata/) | Datasets stale on data.gov.ro |
 
 ### Statistics (2) — `apis/public/stats/`
 | Status | File | Notes |
 |--------|------|-------|
-| ✅ | [insse-tempo](public/stats/insse-tempo.md) | TEMPO-Online; community dump `gov2-ro/tempo-ins-dump` very active |
-| 🔒 | [insse-esop](public/stats/insse-esop.md) | Login required |
+| ✅ | [insse-tempo](/insse-tempo/) | TEMPO-Online; community dump `gov2-ro/tempo-ins-dump` very active |
+| 🔒 | [insse-esop](/insse-esop/) | Login required |
 
 ### Geo (9) — `apis/public/geo/`
 | Status | File | Notes |
 |--------|------|-------|
-| ✅ | [ancpi-geoportal](public/geo/ancpi-geoportal.md) | ArcGIS REST + GeoJSON |
-| ✅ | [ancpi-inspire-wfs](public/geo/ancpi-inspire-wfs.md) | OGC WFS 2.0 cadastral parcels |
-| ⚠️ | [ancpi-eterra](public/geo/ancpi-eterra.md) | 301 → MyEterra |
-| 🔒 | [ancpi-myeterra](public/geo/ancpi-myeterra.md) | Notary/pro access |
-| ✅ | [anm-weather-xml](public/geo/anm-weather-xml.md) | 5 XML feeds documented; reuse needs contract |
-| ✅ | [anm-inspire](public/geo/anm-inspire.md) | WMS 1.3 + WFS, INSPIRE conformant |
-| ⚠️ | [anar-gis-portal](public/geo/anar-gis-portal.md) | TLS cert mismatch |
-| ✅ | [inhga-hydrology](public/geo/inhga-hydrology.md) | Active 2026-04-23 |
-| ✅ | [geo-spatial-org](public/geo/geo-spatial-org.md) | OSGeo-RO chapter; active 2026-01-22 |
+| ✅ | [ancpi-geoportal](/ancpi-geoportal/) | ArcGIS REST + GeoJSON |
+| ✅ | [ancpi-inspire-wfs](/ancpi-inspire-wfs/) | OGC WFS 2.0 cadastral parcels |
+| ⚠️ | [ancpi-eterra](/ancpi-eterra/) | 301 → MyEterra |
+| 🔒 | [ancpi-myeterra](/ancpi-myeterra/) | Notary/pro access |
+| ✅ | [anm-weather-xml](/anm-weather-xml/) | 5 XML feeds documented; reuse needs contract |
+| ✅ | [anm-inspire](/anm-inspire/) | WMS 1.3 + WFS, INSPIRE conformant |
+| ⚠️ | [anar-gis-portal](/anar-gis-portal/) | TLS cert mismatch |
+| ✅ | [inhga-hydrology](/inhga-hydrology/) | Active 2026-04-23 |
+| ✅ | [geo-spatial-org](/geo-spatial-org/) | OSGeo-RO chapter; active 2026-01-22 |
 
 ### Health (4) — `apis/public/health/`
 | Status | File | Notes |
 |--------|------|-------|
-| 🔒 | [cnas-pias-siui](public/health/cnas-pias-siui.md) | SOAP WSDL; WAF 403 + cert; mandatory for providers |
-| 🔒 | [cnas-sipe](public/health/cnas-sipe.md) | E-prescriptions, same gating |
-| ✅ | [cnas-ecard](public/health/cnas-ecard.md) | Windows DLL SDK (not HTTP) |
-| ✅ | [cnas-asigurat-status](public/health/cnas-asigurat-status.md) | CNP+name web form (no API) |
+| 🔒 | [cnas-pias-siui](/cnas-pias-siui/) | SOAP WSDL; WAF 403 + cert; mandatory for providers |
+| 🔒 | [cnas-sipe](/cnas-sipe/) | E-prescriptions, same gating |
+| ✅ | [cnas-ecard](/cnas-ecard/) | Windows DLL SDK (not HTTP) |
+| ✅ | [cnas-asigurat-status](/cnas-asigurat-status/) | CNP+name web form (no API) |
 
 ### Transport (6) — `apis/public/transport/`
 | Status | File | Notes |
 |--------|------|-------|
-| ❌ | [cnair-rovinieta](public/transport/cnair-rovinieta.md) | Just redirects to erovinieta |
-| 🔒 | [erovinieta](public/transport/erovinieta.md) | Distributor contract; WAF 403 |
-| 🚨 | [rar-auto-pass](public/transport/rar-auto-pass.md) | **SUSPENDED** ("aplicația Istoric Vehicul este suspendat") |
-| ✅ | [drpciv](public/transport/drpciv.md) | JS-rendered, needs Playwright |
-| ✅ | [cfr-mersultrenurilor](public/transport/cfr-mersultrenurilor.md) | Internal JSON, undocumented; 1900+ trains |
-| ✅ | [arr](public/transport/arr.md) | Active 2026, sub-apps testare/licente/etc |
+| ❌ | [cnair-rovinieta](/cnair-rovinieta/) | Just redirects to erovinieta |
+| 🔒 | [erovinieta](/erovinieta/) | Distributor contract; WAF 403 |
+| 🚨 | [rar-auto-pass](/rar-auto-pass/) | **SUSPENDED** ("aplicația Istoric Vehicul este suspendat") |
+| ✅ | [drpciv](/drpciv/) | JS-rendered, needs Playwright |
+| ✅ | [cfr-mersultrenurilor](/cfr-mersultrenurilor/) | Internal JSON, undocumented; 1900+ trains |
+| ✅ | [arr](/arr/) | Active 2026, sub-apps testare/licente/etc |
 
 ### Justice (2) — `apis/public/justice/`
 | Status | File | Notes |
 |--------|------|-------|
-| ✅ | [portal-just-ecris](public/justice/portal-just-ecris.md) | SOAP at portalquery.just.ro |
-| ✅ | [monitorul-oficial](public/justice/monitorul-oficial.md) | 2 lei/pagină |
+| ✅ | [portal-just-ecris](/portal-just-ecris/) | SOAP at portalquery.just.ro |
+| ✅ | [monitorul-oficial](/monitorul-oficial/) | 2 lei/pagină |
 
 ### Identity (3) — `apis/public/identity/`
 | Status | File | Notes |
 |--------|------|-------|
-| ✅ | [roeid](public/identity/roeid.md) | National SSO; OIDC + SAML 2.0; eIDAS-notified |
-| ✅ | [sts-ca](public/identity/sts-ca.md) | Qualified certs CA |
-| 🔒 | [depabd](public/identity/depabd.md) | Inter-institutional only |
+| ✅ | [roeid](/roeid/) | National SSO; OIDC + SAML 2.0; eIDAS-notified |
+| ✅ | [sts-ca](/sts-ca/) | Qualified certs CA |
+| 🔒 | [depabd](/depabd/) | Inter-institutional only |
 
 ### Gov (3) — `apis/public/gov/`
 | Status | File | Notes |
 |--------|------|-------|
-| 🔒 | [ghiseul-snep](public/gov/ghiseul-snep.md) | Institution enrollment; 8.5M tx/2024 |
-| ✅ | [e-guvernare](public/gov/e-guvernare.md) | Aggregator portal |
-| ✅ | [catalog-servicii-publice](public/gov/catalog-servicii-publice.md) | 2900+ services |
+| 🔒 | [ghiseul-snep](/ghiseul-snep/) | Institution enrollment; 8.5M tx/2024 |
+| ✅ | [e-guvernare](/e-guvernare/) | Aggregator portal |
+| ✅ | [catalog-servicii-publice](/catalog-servicii-publice/) | 2900+ services |
 
 ### Open Data (2) — `apis/public/opendata/`
 | Status | File | Notes |
 |--------|------|-------|
-| ✅ | [data-gov-ro-ckan](public/opendata/data-gov-ro-ckan.md) | CKAN API verified, 2000+ packages |
-| ⚠️ | [govro-github](public/opendata/govro-github.md) | Last activity 2017 |
+| ✅ | [data-gov-ro-ckan](/data-gov-ro-ckan/) | CKAN API verified, 2000+ packages |
+| ⚠️ | [govro-github](/govro-github/) | Last activity 2017 |
 
 ### Procurement (2) — `apis/public/procurement/`
 | Status | File | Notes |
 |--------|------|-------|
-| ⚠️ | [seap-sicap](public/procurement/seap-sicap.md) | JS-rendered |
-| ⚠️ | [ocds-ro0046](public/procurement/ocds-ro0046.md) | OCDS pilot |
+| ⚠️ | [seap-sicap](/seap-sicap/) | JS-rendered |
+| ⚠️ | [ocds-ro0046](/ocds-ro0046/) | OCDS pilot |
 
 ### Elections (1) — `apis/public/elections/`
 | Status | File | Notes |
 |--------|------|-------|
-| ✅ | [aep-prezenta](public/elections/aep-prezenta.md) | Static JSON dumps per cycle |
+| ✅ | [aep-prezenta](/aep-prezenta/) | Static JSON dumps per cycle |
 
 ### Regulators / civic (7) — `apis/public/regulators/`
 | Status | File | Notes |
 |--------|------|-------|
-| ⚠️ | [anre](public/regulators/anre.md) | TLS cert error; no API |
-| ⚠️ | [ancom-netograf](public/regulators/ancom-netograf.md) | JS-rendered; no public API |
-| ✅ | [anspdcp](public/regulators/anspdcp.md) | Active 2026 |
-| ✅ | [posta-romana-track](public/regulators/posta-romana-track.md) | B2B contract for bulk |
-| ⚠️ | [code4ro-civichq](public/regulators/code4ro-civichq.md) | Last commit 2019 |
-| 🚨 | [code4ro-monitorizare-vot](public/regulators/code4ro-monitorizare-vot.md) | **ARCHIVED 2025-05-26** |
-| ✅ | [peviitor-orase](public/regulators/peviitor-orase.md) | NGO, very active |
+| ⚠️ | [anre](/anre/) | TLS cert error; no API |
+| ⚠️ | [ancom-netograf](/ancom-netograf/) | JS-rendered; no public API |
+| ✅ | [anspdcp](/anspdcp/) | Active 2026 |
+| ✅ | [posta-romana-track](/posta-romana-track/) | B2B contract for bulk |
+| ⚠️ | [code4ro-civichq](/code4ro-civichq/) | Last commit 2019 |
+| 🚨 | [code4ro-monitorizare-vot](/code4ro-monitorizare-vot/) | **ARCHIVED 2025-05-26** |
+| ✅ | [peviitor-orase](/peviitor-orase/) | NGO, very active |
 
 ---
 
@@ -148,121 +148,121 @@ All: ✅ active sandbox, contract for prod, OAuth2 + eIDAS QWAC, Berlin Group sp
 
 | File | Notes |
 |------|-------|
-| [bcr-erste-psd2](private/banks/bcr-erste-psd2.md) | 8+ APIs |
-| [bt-psd2](private/banks/bt-psd2.md) | Largest RO bank |
-| [brd-psd2](private/banks/brd-psd2.md) | Retail + corporate |
-| [ing-ro-psd2](private/banks/ing-ro-psd2.md) | Best docs |
-| [raiffeisen-ro-psd2](private/banks/raiffeisen-ro-psd2.md) | Only RO w/ PIISP at launch |
-| [cec-bank-psd2](private/banks/cec-bank-psd2.md) | State-owned |
-| [otp-ro-psd2](private/banks/otp-ro-psd2.md) | 4 refreshes/day limit |
-| [alpha-bank-ro-psd2](private/banks/alpha-bank-ro-psd2.md) | Transaction data unstructured |
-| [libra-bank-psd2](private/banks/libra-bank-psd2.md) | + premium API Banking |
-| [garanti-bbva-ro-psd2](private/banks/garanti-bbva-ro-psd2.md) | Layer7 portal |
+| [bcr-erste-psd2](/bcr-erste-psd2/) | 8+ APIs |
+| [bt-psd2](/bt-psd2/) | Largest RO bank |
+| [brd-psd2](/brd-psd2/) | Retail + corporate |
+| [ing-ro-psd2](/ing-ro-psd2/) | Best docs |
+| [raiffeisen-ro-psd2](/raiffeisen-ro-psd2/) | Only RO w/ PIISP at launch |
+| [cec-bank-psd2](/cec-bank-psd2/) | State-owned |
+| [otp-ro-psd2](/otp-ro-psd2/) | 4 refreshes/day limit |
+| [alpha-bank-ro-psd2](/alpha-bank-ro-psd2/) | Transaction data unstructured |
+| [libra-bank-psd2](/libra-bank-psd2/) | + premium API Banking |
+| [garanti-bbva-ro-psd2](/garanti-bbva-ro-psd2/) | Layer7 portal |
 
 ### Payments (6) — `apis/private/payments/`
 | Status | File | Notes |
 |--------|------|-------|
-| ✅ | [netopia-mobilpay](private/payments/netopia-mobilpay.md) | Full official SDKs `github.com/mobilpay` |
-| ✅ | [euplatesc](private/payments/euplatesc.md) | Community wrappers |
-| ✅ | [twispay-xmoney](private/payments/twispay-xmoney.md) | Rebranded |
-| ✅ | [plationline](private/payments/plationline.md) | Docs on request |
-| ✅ | [smart2pay-nuvei](private/payments/smart2pay-nuvei.md) | 200+ APMs |
-| ✅ | [stripe-ro](private/payments/stripe-ro.md) | Klarna 4.99% + 1.50 RON |
+| ✅ | [netopia-mobilpay](/netopia-mobilpay/) | Full official SDKs `github.com/mobilpay` |
+| ✅ | [euplatesc](/euplatesc/) | Community wrappers |
+| ✅ | [twispay-xmoney](/twispay-xmoney/) | Rebranded |
+| ✅ | [plationline](/plationline/) | Docs on request |
+| ✅ | [smart2pay-nuvei](/smart2pay-nuvei/) | 200+ APMs |
+| ✅ | [stripe-ro](/stripe-ro/) | Klarna 4.99% + 1.50 RON |
 
 ### Couriers (6) — `apis/private/couriers/`
 All ✅ active (contract for prod).
 | File | Notes |
 |------|-------|
-| [sameday](private/couriers/sameday.md) | + easybox locker SDK |
-| [fan-courier](private/couriers/fan-courier.md) | Repo docs on GitHub |
-| [cargus](private/couriers/cargus.md) | Azure APIM, Swagger |
-| [dpd-ro](private/couriers/dpd-ro.md) | Swagger at api.dpd.ro |
-| [gls-ro](private/couriers/gls-ro.md) | Account-only docs |
-| [innoship](private/couriers/innoship.md) | Multi-courier aggregator, Swagger live |
+| [sameday](/sameday/) | + easybox locker SDK |
+| [fan-courier](/fan-courier/) | Repo docs on GitHub |
+| [cargus](/cargus/) | Azure APIM, Swagger |
+| [dpd-ro](/dpd-ro/) | Swagger at api.dpd.ro |
+| [gls-ro](/gls-ro/) | Account-only docs |
+| [innoship](/innoship/) | Multi-courier aggregator, Swagger live |
 
 ### Telecom (4) — `apis/private/telecom/`
 | Status | File | Notes |
 |--------|------|-------|
-| ✅ | [orange-ro-camara](private/telecom/orange-ro-camara.md) | CAMARA APIs; 5G Lab sandbox |
-| ❌ | [vodafone-ro](private/telecom/vodafone-ro.md) | No public dev portal |
-| ❌ | [digi-rcs-rds](private/telecom/digi-rcs-rds.md) | No public dev portal |
-| ❌ | [telekom-ro](private/telecom/telekom-ro.md) | **DEFUNCT 2025** |
+| ✅ | [orange-ro-camara](/orange-ro-camara/) | CAMARA APIs; 5G Lab sandbox |
+| ❌ | [vodafone-ro](/vodafone-ro/) | No public dev portal |
+| ❌ | [digi-rcs-rds](/digi-rcs-rds/) | No public dev portal |
+| ❌ | [telekom-ro](/telekom-ro/) | **DEFUNCT 2025** |
 
 ### Marketplaces (3) — `apis/private/marketplaces/`
 | Status | File | Notes |
 |--------|------|-------|
-| ✅ | [emag-marketplace](private/marketplaces/emag-marketplace.md) | Basic auth, ~3 req/s |
-| ✅ | [olx-storia-re](private/marketplaces/olx-storia-re.md) | OAuth2, Swagger |
-| ❌ | [olx-ro-classifieds](private/marketplaces/olx-ro-classifieds.md) | No public classifieds API |
+| ✅ | [emag-marketplace](/emag-marketplace/) | Basic auth, ~3 req/s |
+| ✅ | [olx-storia-re](/olx-storia-re/) | OAuth2, Swagger |
+| ❌ | [olx-ro-classifieds](/olx-ro-classifieds/) | No public classifieds API |
 
 ### SMS (1) — `apis/private/sms/`
 | Status | File | Notes |
 |--------|------|-------|
-| ✅ | [smso-ro](private/sms/smso-ro.md) | 100 free SMS on signup |
+| ✅ | [smso-ro](/smso-ro/) | 100 free SMS on signup |
 
 ### Invoicing (6) — `apis/private/invoicing/`
 | Status | File | Notes |
 |--------|------|-------|
-| ✅ | [smartbill-cloud](private/invoicing/smartbill-cloud.md) | 3 req/s |
-| ✅ | [oblio](private/invoicing/oblio.md) | Cheaper alternative |
-| 🔒 | [fgo](private/invoicing/fgo.md) | Enterprise plan only |
-| ✅ | [facturis-online](private/invoicing/facturis-online.md) | Docs on request |
-| ❌ | [saga-soft](private/invoicing/saga-soft.md) | Desktop only, use Oblio/FGO sync |
-| ✅ | [nexus-erp](private/invoicing/nexus-erp.md) | Per-app key |
+| ✅ | [smartbill-cloud](/smartbill-cloud/) | 3 req/s |
+| ✅ | [oblio](/oblio/) | Cheaper alternative |
+| 🔒 | [fgo](/fgo/) | Enterprise plan only |
+| ✅ | [facturis-online](/facturis-online/) | Docs on request |
+| ❌ | [saga-soft](/saga-soft/) | Desktop only, use Oblio/FGO sync |
+| ✅ | [nexus-erp](/nexus-erp/) | Per-app key |
 
 ### Maps (2) — `apis/private/maps/`
 | Status | File | Notes |
 |--------|------|-------|
-| ✅ | [geo-spatial-org-datasets](private/maps/geo-spatial-org-datasets.md) | CC/Free |
-| ✅ | [osm-ro-geofabrik](private/maps/osm-ro-geofabrik.md) | ODbL |
+| ✅ | [geo-spatial-org-datasets](/geo-spatial-org-datasets/) | CC/Free |
+| ✅ | [osm-ro-geofabrik](/osm-ro-geofabrik/) | ODbL |
 
 ### Jobs (3) — `apis/private/jobs/`
 | Status | File | Notes |
 |--------|------|-------|
-| ✅ | [peviitor-jobs](private/jobs/peviitor-jobs.md) | Open-source NGO; 1661 commits |
-| ❌ | [ejobs-ro](private/jobs/ejobs-ro.md) | No public API |
-| ❌ | [bestjobs-ro](private/jobs/bestjobs-ro.md) | No public API |
+| ✅ | [peviitor-jobs](/peviitor-jobs/) | Open-source NGO; 1661 commits |
+| ❌ | [ejobs-ro](/ejobs-ro/) | No public API |
+| ❌ | [bestjobs-ro](/bestjobs-ro/) | No public API |
 
 ### Energy (3) — `apis/private/energy/`
 All ❌ broken (no public API). Tutorials → Playwright/Camoufox scraping.
 | File |
 |------|
-| [ppc-enel](private/energy/ppc-enel.md) |
-| [anre-tariffs](private/energy/anre-tariffs.md) |
-| [hidroelectrica](private/energy/hidroelectrica.md) |
+| [ppc-enel](/ppc-enel/) |
+| [anre-tariffs](/anre-tariffs/) |
+| [hidroelectrica](/hidroelectrica/) |
 
 ### Insurance (2) — `apis/private/insurance/`
 | Status | File | Notes |
 |--------|------|-------|
-| 🔒 | [troco-rca](private/insurance/troco-rca.md) | B2B contract |
-| 🔒 | [pago-iasigurare](private/insurance/pago-iasigurare.md) | Partner only |
+| 🔒 | [troco-rca](/troco-rca/) | B2B contract |
+| 🔒 | [pago-iasigurare](/pago-iasigurare/) | Partner only |
 
 ---
 
 ## AGGREGATORS (8) — `apis/aggregators/`
 | Status | File | Notes |
 |--------|------|-------|
-| ✅ | [openapi-ro](aggregators/openapi-ro.md) | Free 100 req/mo; CIF/CNP/IBAN |
-| 🔒 | [listafirme-eu](aggregators/listafirme-eu.md) | Credit-based |
-| 🔒 | [alertacui-ro](aggregators/alertacui-ro.md) | Subscription monitoring |
-| ⭐ | [incorpo-ro-mcp](aggregators/incorpo-ro-mcp.md) | **MAIN COMPETITOR — first MCP server for RO public data** |
-| ✅ | [everifica-ro](aggregators/everifica-ro.md) | Free UI |
-| ⭐ | [demoanaf-ro](aggregators/demoanaf-ro.md) | Modern REST/JSON, Redis-cached — direct competitor |
-| ✅ | [aperta-sync-anaf-simulator](aggregators/aperta-sync-anaf-simulator.md) | Local dev simulator |
-| ✅ | [eranova-datacore](aggregators/eranova-datacore.md) | REST cache proxy |
+| ✅ | [openapi-ro](/openapi-ro/) | Free 100 req/mo; CIF/CNP/IBAN |
+| 🔒 | [listafirme-eu](/listafirme-eu/) | Credit-based |
+| 🔒 | [alertacui-ro](/alertacui-ro/) | Subscription monitoring |
+| ⭐ | [incorpo-ro-mcp](/incorpo-ro-mcp/) | **MAIN COMPETITOR — first MCP server for RO public data** |
+| ✅ | [everifica-ro](/everifica-ro/) | Free UI |
+| ⭐ | [demoanaf-ro](/demoanaf-ro/) | Modern REST/JSON, Redis-cached — direct competitor |
+| ✅ | [aperta-sync-anaf-simulator](/aperta-sync-anaf-simulator/) | Local dev simulator |
+| ✅ | [eranova-datacore](/eranova-datacore/) | REST cache proxy |
 
 ## COMMUNITY (9) — `apis/community/`
 | Status | File | Notes |
 |--------|------|-------|
-| ⭐ | [florin-szilagyi-efactura-sdk](community/florin-szilagyi-efactura-sdk.md) | **Already bundles MCP server** |
-| ✅ | [printesoi-efactura-go](community/printesoi-efactura-go.md) | Go SDK |
-| ✅ | [andalisolutions-anaf-php](community/andalisolutions-anaf-php.md) | PHP 8.2+ |
-| ✅ | [itrack-anaf-packagist](community/itrack-anaf-packagist.md) | Legacy PHP |
-| ⚠️ | [mfpanaf-clientspv](community/mfpanaf-clientspv.md) | Official sample, abandoned |
-| ⚠️ | [sibies-just-net](community/sibies-just-net.md) | Stale 2021 |
-| ✅ | [gov2-ro-tempo-dump](community/gov2-ro-tempo-dump.md) | FastAPI + DuckDB + Parquet |
-| ⚠️ | [gov2-ro-prezenta-dump](community/gov2-ro-prezenta-dump.md) | Stale 2024 |
-| ⚠️ | [mihai3332001-oauth2-anaf](community/mihai3332001-oauth2-anaf.md) | Stale 2023 |
+| ⭐ | [florin-szilagyi-efactura-sdk](/florin-szilagyi-efactura-sdk/) | **Already bundles MCP server** |
+| ✅ | [printesoi-efactura-go](/printesoi-efactura-go/) | Go SDK |
+| ✅ | [andalisolutions-anaf-php](/andalisolutions-anaf-php/) | PHP 8.2+ |
+| ✅ | [itrack-anaf-packagist](/itrack-anaf-packagist/) | Legacy PHP |
+| ⚠️ | [mfpanaf-clientspv](/mfpanaf-clientspv/) | Official sample, abandoned |
+| ⚠️ | [sibies-just-net](/sibies-just-net/) | Stale 2021 |
+| ✅ | [gov2-ro-tempo-dump](/gov2-ro-tempo-dump/) | FastAPI + DuckDB + Parquet |
+| ⚠️ | [gov2-ro-prezenta-dump](/gov2-ro-prezenta-dump/) | Stale 2024 |
+| ⚠️ | [mihai3332001-oauth2-anaf](/mihai3332001-oauth2-anaf/) | Stale 2023 |
 
 ---
 
