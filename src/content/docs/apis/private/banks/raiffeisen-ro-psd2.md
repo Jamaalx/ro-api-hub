@@ -4,7 +4,7 @@ title: Raiffeisen Bank Romania Open Banking (PSD2)
 category: banks
 institution: Raiffeisen Bank S.A. Romania
 country: RO
-status: active
+status: stale
 verified_at: 2026-05-27
 auth: oauth2
 protocol: REST/JSON
@@ -66,6 +66,7 @@ curl -X GET 'https://developer.raiffeisen.ro/.../v1/accounts' \
 
 ## Known issues / gotchas
 
+- **Link check 2026-09-24:** `official_docs` https://developer.raiffeisen.ro/ → ENOTFOUND (twice, ≥30 s apart). Needs a human to find the new URL.
 - Finqware 2024 benchmark — **3 of 16 RO bank PSD2 APIs broken in prod**
 - Premium APIs under contract
 

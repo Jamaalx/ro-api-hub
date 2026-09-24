@@ -6,6 +6,7 @@ institution: PlatiOnline (PayU-independent RO PSP)
 country: RO
 status: active
 verified_at: 2026-05-27
+links_checked_at: 2026-09-24
 auth: api_key
 protocol: REST/XML
 openapi_spec: false

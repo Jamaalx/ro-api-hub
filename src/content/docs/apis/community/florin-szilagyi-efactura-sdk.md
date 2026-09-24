@@ -6,6 +6,7 @@ institution: florin-szilagyi (open-source, MIT/contributor)
 country: RO
 status: active
 verified_at: 2026-05-27
+links_checked_at: 2026-09-24
 auth: oauth2
 protocol: REST/XML
 openapi_spec: partial

@@ -4,7 +4,7 @@ title: Pago / i-Asigurare (Vodafone) API
 category: insurance
 institution: Pago SA (subsidiar Vodafone Romania) — brand i-Asigurare
 country: RO
-status: active
+status: stale
 verified_at: 2026-05-27
 auth: oauth2
 protocol: REST/JSON
@@ -70,6 +70,7 @@ curl -X POST 'https://api.pago.ro/oauth/token' \
 
 ## Known issues / gotchas
 
+- **Link check 2026-09-24:** `api_base_url` https://api.pago.ro/ → ENOTFOUND (twice, ≥30 s apart). Needs a human to find the new URL.
 - Partner onboarding requires contract + AML/KYC review.
 - Insurer offer set rotates depending on Pago broker partner availability.
 - Token scopes differ for insurance vs bills vs payments.

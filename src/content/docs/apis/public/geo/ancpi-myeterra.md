@@ -58,6 +58,7 @@ None known publicly. Some legal-tech vendors (notary software) bundle MyEterra i
 
 ## Known issues / gotchas
 
+- **Link check 2026-09-24:** `official_docs` https://myeterra.ancpi.ro/ → ENOTFOUND (twice, ≥30 s apart). Needs a human to find the new URL.
 - Closed user group — no public OpenAPI
 - Qualified cert must be installed in the browser/OS keystore for any access
 - Endpoint surface and request shapes are subject to change without public notice

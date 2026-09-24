@@ -4,7 +4,7 @@ title: ANCPI Geoportal (ArcGIS REST)
 category: geo
 institution: Agenția Națională de Cadastru și Publicitate Imobiliară (ANCPI)
 country: RO
-status: active
+status: stale
 verified_at: 2026-05-27
 auth: none
 protocol: ArcGIS_REST
@@ -66,6 +66,8 @@ curl 'https://geoportal.ancpi.ro/arcgis/rest/services/?f=json'
 
 ## Known issues / gotchas
 
+- **Link check 2026-09-24:** `api_base_url` https://geoportal.ancpi.ro/arcgis/rest/services/ → ENOTFOUND (twice, ≥30 s apart). Needs a human to find the new URL.
+- **Link check 2026-09-24:** `official_docs` https://geoportal.ancpi.ro/ → ENOTFOUND (twice, ≥30 s apart). Needs a human to find the new URL.
 - The HTML viewer is JS-rendered; WebFetch returned empty content in the 2026-05-27 sweep — use Playwright if scraping the UI
 - Layer IDs and folder names are not documented in one place; you must crawl the `/services/` catalogue
 - Some `MapServer` services may have `maxRecordCount` limits (commonly 1000) — paginate via `resultOffset`/`resultRecordCount`

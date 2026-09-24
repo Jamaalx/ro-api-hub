@@ -6,6 +6,7 @@ institution: Ministerul Finanțelor (Mfp) — official reference sample
 country: RO
 status: stale
 verified_at: 2026-05-27
+links_checked_at: 2026-09-24
 auth: oauth2
 protocol: REST/JSON
 openapi_spec: false

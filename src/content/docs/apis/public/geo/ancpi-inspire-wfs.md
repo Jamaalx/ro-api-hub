@@ -6,6 +6,7 @@ institution: Agenția Națională de Cadastru și Publicitate Imobiliară (ANCPI
 country: RO
 status: active
 verified_at: 2026-05-27
+links_checked_at: 2026-09-24
 auth: none
 protocol: OGC_WFS
 openapi_spec: false

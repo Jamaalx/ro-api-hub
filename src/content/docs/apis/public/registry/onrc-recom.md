@@ -65,6 +65,7 @@ n/a
 
 ## Known issues / gotchas
 
+- **Link check 2026-09-24:** `official_docs` https://portal.onrc.ro/ → ENOTFOUND (twice, ≥30 s apart). Needs a human to find the new URL.
 - **`www.onrc.ro` shows a "Site under construction!" banner** with news items dated 2020–2021 — do **not** treat it as authoritative. Use `portal.onrc.ro` instead.
 - Bulk access is paid — free tiers exist only via third-party aggregators
 - WAF-protected — automation requires realistic UA + cookie handling

@@ -6,6 +6,7 @@ institution: alertacui.ro (commercial)
 country: RO
 status: gated
 verified_at: 2026-05-27
+links_checked_at: 2026-09-24
 auth: api_key
 protocol: REST/JSON
 openapi_spec: false

@@ -76,6 +76,7 @@ No mature e-Transport-specific SDK exists — most integrators extend an e-Factu
 
 ## Known issues / gotchas
 
+- **Link check 2026-09-24:** `official_docs` https://static.anaf.ro/static/10/Anaf/Informatii_R/RO_e-Transport/Ghid_RO_e_Transport_2025.pdf → HTTP 404. Needs a human to find the new URL.
 - Schema changed multiple times in 2024-2025 — make sure you use the **2025** XSDs
 - UIT becomes invalid if transport doesn't start within 5 calendar days — must STERGERE + re-submit
 - Modification window after submission is narrow — design UI for "draft → confirm" flow

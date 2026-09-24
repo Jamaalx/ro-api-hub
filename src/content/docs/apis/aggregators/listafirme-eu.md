@@ -69,6 +69,7 @@ curl -H "Authorization: Bearer YOUR_KEY" \
 
 ## Known issues / gotchas
 
+- **Link check 2026-09-24:** `api_base_url` https://api.listafirme.eu/v1/ → ENOTFOUND (twice, ≥30 s apart). Needs a human to find the new URL.
 - Credit consumption opaque until you read the price grid per endpoint
 - Multi-source merge can give conflicting info (e.g. ONRC says active, ANAF says VAT cancelled)
 - No documented SLA / rate limits beyond credit budget

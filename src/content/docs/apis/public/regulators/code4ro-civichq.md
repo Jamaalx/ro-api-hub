@@ -65,6 +65,7 @@ curl 'https://api.civichq.org/v1/apps'
 
 ## Known issues / gotchas
 
+- **Link check 2026-09-24:** `api_base_url` https://api.civichq.org/ → ENOTFOUND (twice, ≥30 s apart). Needs a human to find the new URL.
 - Abandoned since 2019 — endpoint may be offline.
 - Schema unlikely to be maintained.
 - For current civic-tech inventory, check Code for Romania's GitHub org directly.

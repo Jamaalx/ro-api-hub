@@ -6,6 +6,7 @@ institution: CNAIR (operator delegat erovinieta)
 country: RO
 status: gated
 verified_at: 2026-05-27
+links_checked_at: 2026-09-24
 auth: contract
 protocol: REST/JSON
 openapi_spec: false

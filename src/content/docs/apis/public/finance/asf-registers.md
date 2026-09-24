@@ -6,6 +6,7 @@ institution: Autoritatea de Supraveghere Financiară (ASF)
 country: RO
 status: broken
 verified_at: 2026-05-27
+links_checked_at: 2026-09-24
 auth: none
 protocol: static_files
 openapi_spec: false

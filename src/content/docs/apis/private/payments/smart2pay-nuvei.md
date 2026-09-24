@@ -6,6 +6,7 @@ institution: Nuvei Corporation (acquired Smart2Pay 2021)
 country: RO
 status: active
 verified_at: 2026-05-27
+links_checked_at: 2026-09-24
 auth: api_key
 protocol: REST/JSON
 openapi_spec: true

@@ -6,6 +6,7 @@ institution: Administrația Națională de Meteorologie (ANM)
 country: RO
 status: active
 verified_at: 2026-05-27
+links_checked_at: 2026-09-24
 auth: none
 protocol: REST/XML
 openapi_spec: false

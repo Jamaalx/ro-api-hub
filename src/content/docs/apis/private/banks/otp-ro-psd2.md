@@ -4,7 +4,7 @@ title: OTP Bank Romania Open Banking (PSD2)
 category: banks
 institution: OTP Bank Romania S.A.
 country: RO
-status: active
+status: stale
 verified_at: 2026-05-27
 auth: oauth2
 protocol: REST/JSON
@@ -65,6 +65,7 @@ curl -X GET 'https://devch.otpdirekt.ro/.../v1/accounts' \
 
 ## Known issues / gotchas
 
+- **Link check 2026-09-24:** `official_docs` https://devch.otpdirekt.ro/prod-devch/developer-portal/ → ENOTFOUND (twice, ≥30 s apart). Needs a human to find the new URL.
 - Finqware 2024 benchmark — **3 of 16 RO bank PSD2 APIs broken in prod**
 - Hard cap: 4 background AISP refreshes per day per consent
 - Portal URL is awkward — easy to misroute

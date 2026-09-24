@@ -4,7 +4,7 @@ title: e-Guvernare.ro — Aggregator de servicii
 category: gov
 institution: Autoritatea pentru Digitalizarea României (ADR)
 country: RO
-status: active
+status: stale
 verified_at: 2026-05-27
 auth: qualified_cert
 protocol: REST/JSON
@@ -63,6 +63,7 @@ HTML / signed PDF acknowledgements.
 
 ## Known issues / gotchas
 
+- **Link check 2026-09-24:** `official_docs` https://www.e-guvernare.ro/ → TIMEOUT (twice, ≥30 s apart). Needs a human to find the new URL.
 - Forms-only portal; no documented API.
 - Many listed services are external links to sector portals (ANAF, MAI, etc.).
 - Some flows require qualified certificate at signature time.

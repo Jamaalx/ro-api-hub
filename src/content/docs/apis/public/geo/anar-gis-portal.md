@@ -6,6 +6,7 @@ institution: Administrația Națională "Apele Române" (ANAR)
 country: RO
 status: active
 verified_at: 2026-05-27
+links_checked_at: 2026-09-24
 auth: none
 protocol: ArcGIS_REST
 openapi_spec: false

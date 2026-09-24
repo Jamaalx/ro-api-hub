@@ -6,6 +6,7 @@ institution: Casa Națională de Asigurări de Sănătate (CNAS)
 country: RO
 status: active
 verified_at: 2026-05-27
+links_checked_at: 2026-09-24
 auth: qualified_cert
 protocol: SOAP
 openapi_spec: false
