@@ -1,11 +1,11 @@
 ---
 title: Catalog complet (master index)
-description: 124 servicii API românești în 27 de categorii — status, autentificare, endpoint-uri și linkuri către fișa fiecăruia.
+description: 125 servicii API românești în 27 de categorii — status, autentificare, endpoint-uri și linkuri către fișa fiecăruia.
 sidebar:
   order: 0
 ---
 
-> 124 per-service MDs across 27 categories. One file per API/service. All use the YAML frontmatter schema in `../templates/api-service.md` — parsable by downstream agents (Playwright probes, OpenAPI generators, MCP wrappers, tutorial pipelines).
+> 125 per-service MDs across 27 categories. One file per API/service. All use the YAML frontmatter schema in `../templates/api-service.md` — parsable by downstream agents (Playwright probes, OpenAPI generators, MCP wrappers, tutorial pipelines).
 
 **Verified at:** 2026-05-27
 
@@ -28,7 +28,7 @@ sidebar:
 | ⚠️ | [anaf-vat-v8-async](/anaf-vat-v8-async/) | v8 retired 2025-05-01 — migrate to v9 |
 | ✅ | [anaf-efactura-prod](/anaf-efactura-prod/) | Mandatory B2B; OAuth2 + qualified cert |
 | ✅ | [anaf-efactura-test](/anaf-efactura-test/) | Sandbox |
-| ✅ | [anaf-etransport](/anaf-etransport/) | Mandatory; PDF guide stale (use 2025 version) |
+| ✅ | [anaf-etransport](/anaf-etransport/) | Mandatory; 2025 guide moved to `/AsistentaContribuabili_r/` (2026-09-24) |
 | ✅ | [anaf-oauth2](/anaf-oauth2/) | Token service for all ANAF APIs |
 | ✅ | [anaf-spv](/anaf-spv/) | Mailbox: messages between taxpayer and ANAF |
 | ✅ | [anaf-saf-t](/anaf-saf-t/) | Schema v249, last update 2026-02-19 |
@@ -50,7 +50,7 @@ sidebar:
 ### Registry (2) — `apis/public/registry/`
 | Status | File | Notes |
 |--------|------|-------|
-| 🔒 | [onrc-recom](/onrc-recom/) | Paid bulk access; onrc.ro "under construction" |
+| 🔒 | [onrc-recom](/onrc-recom/) | Paid bulk access; portal moved to myportal.onrc.ro |
 | ⚠️ | [onrc-opendata](/onrc-opendata/) | Datasets stale on data.gov.ro |
 
 ### Statistics (2) — `apis/public/stats/`
@@ -62,10 +62,10 @@ sidebar:
 ### Geo (9) — `apis/public/geo/`
 | Status | File | Notes |
 |--------|------|-------|
-| ⚠️ | [ancpi-geoportal](/ancpi-geoportal/) | ArcGIS REST + GeoJSON — host did not resolve on 2026-09-24 |
+| 🚨 | [ancpi-geoportal](/ancpi-geoportal/) | Offline since the July 2026 ANCPI ransomware attack; staged restart pending |
 | ✅ | [ancpi-inspire-wfs](/ancpi-inspire-wfs/) | OGC WFS 2.0 cadastral parcels |
 | ⚠️ | [ancpi-eterra](/ancpi-eterra/) | 301 → MyEterra |
-| 🔒 | [ancpi-myeterra](/ancpi-myeterra/) | Notary/pro access |
+| 🚨 | [ancpi-myeterra](/ancpi-myeterra/) | Notary/pro access — offline since the July 2026 ransomware attack |
 | ✅ | [anm-weather-xml](/anm-weather-xml/) | 5 XML feeds documented; reuse needs contract |
 | ✅ | [anm-inspire](/anm-inspire/) | WMS 1.3 + WFS, INSPIRE conformant |
 | ⚠️ | [anar-gis-portal](/anar-gis-portal/) | TLS cert mismatch |
@@ -107,7 +107,7 @@ sidebar:
 | Status | File | Notes |
 |--------|------|-------|
 | 🔒 | [ghiseul-snep](/ghiseul-snep/) | Institution enrollment; 8.5M tx/2024 |
-| ⚠️ | [e-guvernare](/e-guvernare/) | Aggregator portal — timed out on 2026-09-24 |
+| 🚨 | [e-guvernare](/e-guvernare/) | Replaced by ROePAS (roepas.ro, March 2026) |
 | ✅ | [catalog-servicii-publice](/catalog-servicii-publice/) | 2900+ services |
 
 ### Open Data (2) — `apis/public/opendata/`
@@ -134,7 +134,7 @@ sidebar:
 | ⚠️ | [ancom-netograf](/ancom-netograf/) | JS-rendered; no public API |
 | ✅ | [anspdcp](/anspdcp/) | Active 2026 |
 | ✅ | [posta-romana-track](/posta-romana-track/) | B2B contract for bulk |
-| ⚠️ | [code4ro-civichq](/code4ro-civichq/) | Last commit 2019 |
+| 🚨 | [code4ro-civichq](/code4ro-civichq/) | API host gone; continues as Centru Civic (no public API) |
 | 🚨 | [code4ro-monitorizare-vot](/code4ro-monitorizare-vot/) | **ARCHIVED 2025-05-26** |
 | ✅ | [peviitor-orase](/peviitor-orase/) | NGO, very active |
 
@@ -152,11 +152,11 @@ All: ✅ active sandbox, contract for prod, OAuth2 + eIDAS QWAC, Berlin Group sp
 | [bt-psd2](/bt-psd2/) | Largest RO bank |
 | [brd-psd2](/brd-psd2/) | Retail + corporate |
 | [ing-ro-psd2](/ing-ro-psd2/) | Best docs |
-| [raiffeisen-ro-psd2](/raiffeisen-ro-psd2/) | Only RO w/ PIISP at launch |
+| [raiffeisen-ro-psd2](/raiffeisen-ro-psd2/) | Only RO w/ PIISP at launch — developer portal host gone (2026-09-24) |
 | [cec-bank-psd2](/cec-bank-psd2/) | State-owned |
-| [otp-ro-psd2](/otp-ro-psd2/) | 4 refreshes/day limit |
-| [alpha-bank-ro-psd2](/alpha-bank-ro-psd2/) | Transaction data unstructured |
-| [libra-bank-psd2](/libra-bank-psd2/) | + premium API Banking |
+| [otp-ro-psd2](/otp-ro-psd2/) | Bank absorbed by BT on 2025-02-28 — use bt-psd2 |
+| [alpha-bank-ro-psd2](/alpha-bank-ro-psd2/) | Bank absorbed by UniCredit (Aug 2025) — use developer.unicredit.eu |
+| [libra-bank-psd2](/libra-bank-psd2/) | + premium API Banking; portal now `/devportal/` |
 | [garanti-bbva-ro-psd2](/garanti-bbva-ro-psd2/) | Layer7 portal |
 
 ### Payments (6) — `apis/private/payments/`
@@ -175,7 +175,7 @@ All ✅ active (contract for prod).
 |------|-------|
 | [sameday](/sameday/) | + easybox locker SDK |
 | [fan-courier](/fan-courier/) | Repo docs on GitHub |
-| [cargus](/cargus/) | Azure APIM, Swagger |
+| [cargus](/cargus/) | Azure APIM, new portal urgentcargus.developer.azure-api.net |
 | [dpd-ro](/dpd-ro/) | Swagger at api.dpd.ro |
 | [gls-ro](/gls-ro/) | Account-only docs |
 | [innoship](/innoship/) | Multi-courier aggregator, Swagger live |
@@ -239,11 +239,12 @@ All ❌ broken (no public API). Tutorials → Playwright/Camoufox scraping.
 
 ---
 
-## AGGREGATORS (8) — `apis/aggregators/`
+## AGGREGATORS (9) — `apis/aggregators/`
 | Status | File | Notes |
 |--------|------|-------|
 | ✅ | [openapi-ro](/openapi-ro/) | Free 100 req/mo; CIF/CNP/IBAN |
-| 🔒 | [listafirme-eu](/listafirme-eu/) | Credit-based |
+| 🔒 | [listafirme-eu](/listafirme-eu/) | Credit-based; API now under listafirme.ro/api/ |
+| ✅ | [registru-horecaos](/registru-horecaos/) | Free key, 1,000 req/day; CUI lookup + search + form widget |
 | 🔒 | [alertacui-ro](/alertacui-ro/) | Subscription monitoring |
 | ⭐ | [incorpo-ro-mcp](/incorpo-ro-mcp/) | **MAIN COMPETITOR — first MCP server for RO public data** |
 | ✅ | [everifica-ro](/everifica-ro/) | Free UI |
@@ -266,17 +267,17 @@ All ❌ broken (no public API). Tutorials → Playwright/Camoufox scraping.
 
 ---
 
-## Status totals (124)
+## Status totals (125)
 
 From the `status:` frontmatter of the service files (after the 2026-09-24 link check):
 
 | Status | Count |
 |--------|-------|
 | ✅ active | 86 |
-| ⚠️ stale | 15 |
-| 🔒 gated | 9 |
+| ⚠️ stale | 11 |
+| 🔒 gated | 8 |
 | ❌ broken / no public API | 13 |
-| 🚨 suspended | 1 (RAR Auto Pass) |
+| 🚨 suspended | 7 (RAR Auto Pass, ANCPI Geoportal, MyEterra, e-guvernare, CivicHQ, OTP RO and Alpha Bank RO PSD2) |
 
 The icons in the tables above are an editorial summary and can differ from the `status:` field; the field is authoritative (also exported in `catalog.json`).
 

@@ -10,7 +10,7 @@ Toate datele din ro-api-hub sunt text simplu: o fișă Markdown per API, cu fron
 
 ## catalog.json (cel mai simplu)
 
-Un singur fișier JSON cu toate cele 124 de servicii (slug, categorie, status, auth, sandbox, URL-uri de documentație, linkul spre fișă). E comis în repo, deci merge direct de pe GitHub, fără niciun site:
+Un singur fișier JSON cu toate cele 125 de servicii (slug, categorie, status, auth, sandbox, URL-uri de documentație, linkul spre fișă). E comis în repo, deci merge direct de pe GitHub, fără niciun site:
 
 <Code lang="bash" code={`curl -s ${RAW_CATALOG_URL} | jq '.services[] | select(.auth == "none" and .status == "active") | .slug'`} />
 

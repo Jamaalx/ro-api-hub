@@ -10,8 +10,8 @@ An open-source catalogue of Romanian APIs — public sector (ANAF, BNR, ONRC, CN
 
 | | |
 |---|---|
-| **124 service files** | [`src/content/docs/apis/`](./src/content/docs/apis) — read them on GitHub, grep them, feed them to an LLM |
-| **`catalog.json`** | one JSON index of all 124 services, committed at the repo root → [raw URL](https://raw.githubusercontent.com/Jamaalx/ro-api-hub/main/catalog.json) · [JSON Schema](./public/catalog.schema.json) |
+| **125 service files** | [`src/content/docs/apis/`](./src/content/docs/apis) — read them on GitHub, grep them, feed them to an LLM |
+| **`catalog.json`** | one JSON index of all 125 services, committed at the repo root → [raw URL](https://raw.githubusercontent.com/Jamaalx/ro-api-hub/main/catalog.json) · [JSON Schema](./public/catalog.schema.json) |
 | **Link checker** | [`scripts/check-apis.mjs`](./scripts/check-apis.mjs) — last run: [`reports/links-2026-09-24.md`](./reports/links-2026-09-24.md) |
 | **Static site (optional)** | Astro Starlight: search, sidebar, `llms.txt`. Run it locally with `npm run dev`; not published anywhere yet |
 
@@ -74,7 +74,7 @@ Up to 100 CUIs per call, ~1 req/s. The file lists the response shape, the SDKs t
 | public | [Regulators / civic](https://github.com/Jamaalx/ro-api-hub/tree/main/src/content/docs/apis/public/regulators) | 7 | 4 |
 | public | [Statistics (INS)](https://github.com/Jamaalx/ro-api-hub/tree/main/src/content/docs/apis/public/stats) | 2 | 2 |
 | public | [Transport (CNAIR, RAR, DRPCIV, CFR)](https://github.com/Jamaalx/ro-api-hub/tree/main/src/content/docs/apis/public/transport) | 6 | 3 |
-| private | [Banks — PSD2](https://github.com/Jamaalx/ro-api-hub/tree/main/src/content/docs/apis/private/banks) | 10 | 8 |
+| private | [Banks — PSD2](https://github.com/Jamaalx/ro-api-hub/tree/main/src/content/docs/apis/private/banks) | 10 | 7 |
 | private | [Couriers](https://github.com/Jamaalx/ro-api-hub/tree/main/src/content/docs/apis/private/couriers) | 6 | 6 |
 | private | [Energy](https://github.com/Jamaalx/ro-api-hub/tree/main/src/content/docs/apis/private/energy) | 3 | 0 |
 | private | [Insurance](https://github.com/Jamaalx/ro-api-hub/tree/main/src/content/docs/apis/private/insurance) | 2 | 1 |
@@ -85,10 +85,10 @@ Up to 100 CUIs per call, ~1 req/s. The file lists the response shape, the SDKs t
 | private | [Payments](https://github.com/Jamaalx/ro-api-hub/tree/main/src/content/docs/apis/private/payments) | 6 | 6 |
 | private | [SMS](https://github.com/Jamaalx/ro-api-hub/tree/main/src/content/docs/apis/private/sms) | 1 | 1 |
 | private | [Telecom](https://github.com/Jamaalx/ro-api-hub/tree/main/src/content/docs/apis/private/telecom) | 4 | 1 |
-| — | [Aggregators](https://github.com/Jamaalx/ro-api-hub/tree/main/src/content/docs/apis/aggregators) | 8 | 6 |
+| — | [Aggregators](https://github.com/Jamaalx/ro-api-hub/tree/main/src/content/docs/apis/aggregators) | 9 | 7 |
 | — | [Community SDKs / datasets](https://github.com/Jamaalx/ro-api-hub/tree/main/src/content/docs/apis/community) | 9 | 5 |
 
-Status totals (from the frontmatter, after the 2026-09-24 link check): **86 active · 15 stale · 9 gated · 13 broken (no public API) · 1 suspended**. The full editorial index with notes per service is [`apis/index.md`](./src/content/docs/apis/index.md).
+Status totals (from the frontmatter, after the 2026-09-24 link check): **86 active · 11 stale · 8 gated · 13 broken (no public API) · 7 suspended**. The full editorial index with notes per service is [`apis/index.md`](./src/content/docs/apis/index.md).
 
 ### For LLMs and agents
 
