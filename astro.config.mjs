@@ -41,7 +41,7 @@ export default defineConfig({
   integrations: [
     starlight({
       title: 'ro-api-hub',
-      description: 'The comprehensive open-source library of Romanian APIs — keys, sandbox credentials, OpenAPI specs, SDKs, tutorials and MCP wrappers in one place.',
+      description: 'Open-source catalogue of Romanian APIs — endpoints, auth and access steps, sandboxes, examples, existing SDKs and gotchas, one file per service.',
       defaultLocale: 'root',
       locales: {
         root: { label: 'Română', lang: 'ro' },
@@ -52,7 +52,7 @@ export default defineConfig({
       plugins: [
         starlightLlmsTxt({
           projectName: 'ro-api-hub',
-          description: 'Comprehensive catalogue of Romanian APIs (BNR, ANAF, ONRC, banks, couriers, etc.) with endpoints, auth flows, SDKs, OpenAPI specs and MCP wrappers.',
+          description: 'Catalogue of Romanian APIs (ANAF, BNR, ONRC, PSD2 banks, couriers, etc.): endpoints, auth flows, access steps, examples, existing third-party SDKs and known issues. Machine-readable index: catalog.json.',
           customSets: [
             { label: 'Fiscal', description: 'ANAF VAT, e-Factura, e-Transport, SAF-T, SPV, e-TVA', paths: slugsIn('apis/public/fiscal') },
             { label: 'Finance', description: 'BNR, ASF, BVB', paths: slugsIn('apis/public/finance') },

@@ -4,7 +4,7 @@ Briefing for AI coding agents (OpenAI Codex, Cursor, Claude Code, GitHub Copilot
 
 ## What this repo is
 
-`ro-api-hub` — the comprehensive open-source library of Romanian APIs (fiscal, finance, banks, couriers, health, transport, etc.). 124 services catalogued, one MD per service with structured YAML frontmatter, plus tutorials, OpenAPI specs, SDKs, and an MCP server.
+`ro-api-hub` — the comprehensive open-source library of Romanian APIs (fiscal, finance, banks, couriers, health, transport, etc.). 124 services catalogued, one MD per service with structured YAML frontmatter, exported to `catalog.json` (`npm run catalog`). Tutorials, OpenAPI specs, SDKs and an MCP server are planned, not built.
 
 Built with **Astro Starlight + starlight-llms-txt**.
 

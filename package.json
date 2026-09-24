@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.1.0",
   "private": true,
-  "description": "The comprehensive open-source library of Romanian APIs — keys, sandbox credentials, OpenAPI specs, SDKs, tutorials and MCP wrappers in one place.",
+  "description": "Open-source catalogue of Romanian APIs — endpoints, auth and access steps, sandboxes, examples, existing SDKs and gotchas, one file per service.",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",

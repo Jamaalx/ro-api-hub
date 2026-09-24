@@ -62,7 +62,7 @@ sidebar:
 ### Geo (9) — `apis/public/geo/`
 | Status | File | Notes |
 |--------|------|-------|
-| ✅ | [ancpi-geoportal](/ancpi-geoportal/) | ArcGIS REST + GeoJSON |
+| ⚠️ | [ancpi-geoportal](/ancpi-geoportal/) | ArcGIS REST + GeoJSON — host did not resolve on 2026-09-24 |
 | ✅ | [ancpi-inspire-wfs](/ancpi-inspire-wfs/) | OGC WFS 2.0 cadastral parcels |
 | ⚠️ | [ancpi-eterra](/ancpi-eterra/) | 301 → MyEterra |
 | 🔒 | [ancpi-myeterra](/ancpi-myeterra/) | Notary/pro access |
@@ -107,7 +107,7 @@ sidebar:
 | Status | File | Notes |
 |--------|------|-------|
 | 🔒 | [ghiseul-snep](/ghiseul-snep/) | Institution enrollment; 8.5M tx/2024 |
-| ✅ | [e-guvernare](/e-guvernare/) | Aggregator portal |
+| ⚠️ | [e-guvernare](/e-guvernare/) | Aggregator portal — timed out on 2026-09-24 |
 | ✅ | [catalog-servicii-publice](/catalog-servicii-publice/) | 2900+ services |
 
 ### Open Data (2) — `apis/public/opendata/`
@@ -268,14 +268,17 @@ All ❌ broken (no public API). Tutorials → Playwright/Camoufox scraping.
 
 ## Status totals (124)
 
+From the `status:` frontmatter of the service files (after the 2026-09-24 link check):
+
 | Status | Count |
 |--------|-------|
-| ✅ active | 67 |
-| ⚠️ stale | 18 |
-| 🔒 gated | 18 |
-| ❌ broken/missing | 14 |
-| 🚨 critical | 3 (RAR Auto Pass, ASF /1544/, monitorizare-vot archived) |
-| ⭐ adjacent (single-vertical, not competitors) | 3 (incorpo.ro, demoanaf.ro, florin-szilagyi sdk) |
+| ✅ active | 86 |
+| ⚠️ stale | 15 |
+| 🔒 gated | 9 |
+| ❌ broken / no public API | 13 |
+| 🚨 suspended | 1 (RAR Auto Pass) |
+
+The icons in the tables above are an editorial summary and can differ from the `status:` field; the field is authoritative (also exported in `catalog.json`).
 
 ## Quick wins for ro-api-hub (no real competition)
 
