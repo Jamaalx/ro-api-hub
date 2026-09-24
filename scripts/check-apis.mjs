@@ -18,7 +18,8 @@
 // Usage:
 //   node scripts/check-apis.mjs [--write] [--report <file.md>] [--json <file.json>] [--date YYYY-MM-DD] [--only slug,slug]
 //   --write   update frontmatter: `links_checked_at` for fully-ok services; dead links get a
-//             "Known issues" note and (for `status: active`) `status: stale`.
+//             "Known issues" note; if a host is gone (DNS/connection/timeout twice) an
+//             `active` service becomes `stale`. A 404 on one page only adds the note.
 // Exit code: 0 = no dead links, 1 = at least one dead link, 2 = script error.
 import { writeFileSync, readFileSync, mkdirSync } from 'node:fs';
 import { dirname } from 'node:path';
@@ -209,7 +210,10 @@ if (WRITE) {
       for (const c of row.checks.filter((c) => c.result === 'dead' || c.result === 'timeout')) {
         text = addKnownIssue(text, `- **Link check ${DATE}:** \`${c.field}\` ${c.url} → ${describe(c.r)}${c.first ? ` (twice, ≥30 s apart)` : ''}. Needs a human to find the new URL.`);
       }
-      if (s.data.status === 'active') text = setField(text, 'status', 'stale', 'country');
+      // Host gone (DNS / connection / timeout) -> the documented integration path is unusable: stale.
+      // A single moved page (404/410) only gets the note — the API itself may be fine.
+      const hostGone = row.checks.some((c) => (c.result === 'dead' || c.result === 'timeout') && c.r.error);
+      if (hostGone && s.data.status === 'active') text = setField(text, 'status', 'stale', 'country');
     }
     if (text !== s.text) writeFileSync(s.file, text);
   }
