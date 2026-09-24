@@ -12,6 +12,7 @@ ro-api-hub e un proiect community-owned. Orice contribuție e binevenită — de
 3. Completează toate câmpurile din YAML frontmatter (vezi schema în `src/content.config.ts`)
 4. Adaugă cel puțin: Overview, Endpoints, Authentication, un Request example funcțional, Known issues
 5. Setează `verified_at: YYYY-MM-DD` cu data la care ai testat efectiv API-ul
+   (`links_checked_at` e altceva: îl scrie `node scripts/check-apis.mjs --write` când linkurile răspund — nu înseamnă că API-ul a fost testat)
 6. PR cu titlu `add: {nume serviciu}`
 
 ## Corectează unul existent

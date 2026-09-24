@@ -19,7 +19,11 @@ export const collections = {
         institution: z.string().optional(),
         country: z.string().default('RO').optional(),
         status: z.enum(['active', 'stale', 'broken', 'suspended', 'gated']).optional(),
+        // Date a human actually exercised the API (request/response tested).
         verified_at: z.coerce.string().optional(),
+        // Date scripts/check-apis.mjs last saw the public URLs (docs, base) answer.
+        // Says nothing about whether the API itself works.
+        links_checked_at: z.coerce.string().optional(),
         auth: z.string().optional(),
         protocol: z.string().optional(),
         openapi_spec: z.union([z.boolean(), z.literal('partial')]).optional(),

@@ -6,6 +6,7 @@ institution: Issuing institution / company
 country: RO
 status: active | stale | broken | suspended | gated
 verified_at: 2026-05-27
+# links_checked_at: YYYY-MM-DD — optional; written by scripts/check-apis.mjs --write, not by hand
 auth: none | api_key | oauth2 | mtls | qualified_cert | basic_auth | contract
 protocol: REST/JSON | REST/XML | SOAP | OGC_WMS | OGC_WFS | ArcGIS_REST | OData | static_files
 openapi_spec: true | partial | false

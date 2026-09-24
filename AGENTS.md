@@ -53,7 +53,8 @@ category: fiscal | finance | banks | couriers | ...
 institution: "Issuing body"
 country: RO
 status: active | stale | broken | suspended | gated
-verified_at: 2026-05-27        # date you last verified
+verified_at: 2026-05-27        # date you last actually tested the API
+links_checked_at: 2026-09-24   # optional, written by scripts/check-apis.mjs (links answer; API not tested)
 auth: none | api_key | oauth2 | mtls | qualified_cert | basic_auth | contract
 protocol: REST/JSON | REST/XML | SOAP | OGC_WMS | OGC_WFS | ArcGIS_REST | OData | static_files
 openapi_spec: true | partial | false
