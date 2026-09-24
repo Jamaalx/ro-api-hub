@@ -7,10 +7,15 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
+    "predev": "node scripts/build-catalog.mjs --public-only",
+    "prebuild": "node scripts/build-catalog.mjs --public-only",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "check:apis": "node scripts/check-apis.mjs --report reports/links-latest.md"
+    "catalog": "node scripts/build-catalog.mjs",
+    "check:catalog": "node scripts/build-catalog.mjs --check",
+    "check:apis": "node scripts/check-apis.mjs --report reports/links-latest.md",
+    "check:links": "node scripts/check-dist-links.mjs"
   },
   "dependencies": {
     "@astrojs/starlight": "^0.41.10",
