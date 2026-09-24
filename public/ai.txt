@@ -13,6 +13,6 @@ Allow-Search: yes
 Allow-RAG: yes
 
 # License: MIT for code, CC-BY-4.0 for documentation content.
-# Attribution: link to https://ro-api-hub.dev or cite "ro-api-hub".
+# Attribution: link to https://github.com/Jamaalx/ro-api-hub or cite "ro-api-hub".
 
 Contact: https://github.com/Jamaalx/ro-api-hub/issues

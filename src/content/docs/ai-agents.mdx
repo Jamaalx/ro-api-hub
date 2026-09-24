@@ -1,0 +1,50 @@
+---
+title: Pentru AI agents
+description: Cum folosești ro-api-hub dintr-un LLM sau agent — catalog.json, llms.txt, fișele Markdown.
+---
+
+import { Code } from '@astrojs/starlight/components';
+import { SITE_URL, RAW_CATALOG_URL } from '../../../site.config.mjs';
+
+Toate datele din ro-api-hub sunt text simplu: o fișă Markdown per API, cu frontmatter YAML plat. Nu ai nevoie de site ca să le folosești.
+
+## catalog.json (cel mai simplu)
+
+Un singur fișier JSON cu toate cele 124 de servicii (slug, categorie, status, auth, sandbox, URL-uri de documentație, linkul spre fișă). E comis în repo, deci merge direct de pe GitHub, fără niciun site:
+
+<Code lang="bash" code={`curl -s ${RAW_CATALOG_URL} | jq '.services[] | select(.auth == "none" and .status == "active") | .slug'`} />
+
+Schema: [`catalog.schema.json`](https://github.com/Jamaalx/ro-api-hub/blob/main/public/catalog.schema.json). Aceeași pereche e servită și de site, la [`/catalog.json`](/catalog.json).
+
+## llms.txt
+
+Când site-ul e construit (`npm run build`) sau publicat, conține:
+
+- [`/llms.txt`](/llms.txt) — index
+- [`/llms-full.txt`](/llms-full.txt) — conținutul complet, pentru context window mare
+- [`/llms-small.txt`](/llms-small.txt) — variantă comprimată
+
+Seturi parțiale per categorie (toate listate și în `/llms.txt`):
+
+- `/_llms-txt/fiscal.txt` — ANAF (VAT, e-Factura, e-Transport, SAF-T, SPV, e-TVA)
+- `/_llms-txt/finance.txt` — BNR, ASF, BVB
+- `/_llms-txt/banks-psd2.txt` — băncile PSD2
+- `/_llms-txt/couriers.txt` — Sameday, FAN, Cargus, DPD, GLS, Innoship
+- `/_llms-txt/all-public.txt` — toate API-urile din sectorul public
+- `/_llms-txt/all-private.txt` — toate API-urile din sectorul privat
+
+Adresa publică a site-ului e configurabilă (`SITE_URL`); pentru build-ul acesta e:
+
+<Code lang="text" code={`Use the context at ${SITE_URL}/llms-full.txt to answer questions about Romanian APIs.`} />
+
+Fără site, dă-i agentului direct fișele din repo: `src/content/docs/apis/**`.
+
+## MCP server — planificat, nu există încă
+
+Un server MCP care să expună catalogul ca tools (`search_apis`, `get_api`, `list_by_status` …) e **planificat**. Nu există azi niciun endpoint `/mcp`. Până atunci, `catalog.json` + fișele Markdown acoperă același lucru pentru orice agent care poate face un `fetch`.
+
+## Crawlere AI
+
+`robots.txt` permite crawlere AI (GPTBot, ClaudeBot, PerplexityBot, Google-Extended, Applebot-Extended etc.).
+
+`ai.txt` declară opt-in pentru TDM (Text & Data Mining, Art. 4 din Directiva UE privind dreptul de autor) — conținutul e CC BY 4.0.

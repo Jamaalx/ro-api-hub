@@ -3,6 +3,19 @@ import starlight from '@astrojs/starlight';
 import starlightLlmsTxt from 'starlight-llms-txt';
 import { readdirSync, readFileSync } from 'node:fs';
 import { join, relative } from 'node:path';
+import { SITE_ORIGIN, BASE_PATH } from './site.config.mjs';
+
+// Markdown links like `/anaf-vat-v9/` are written root-relative. When the site is
+// served under a path (GitHub Pages: /ro-api-hub), prefix them with `base`.
+function remarkBaseLinks() {
+  const walk = (node) => {
+    if ((node.type === 'link' || node.type === 'definition') && /^\/(?!\/)/.test(node.url) && !node.url.startsWith(BASE_PATH + '/')) {
+      node.url = BASE_PATH + node.url;
+    }
+    node.children?.forEach(walk);
+  };
+  return (tree) => { if (BASE_PATH) walk(tree); };
+}
 
 // Every service file sets a flat `slug:` in its frontmatter, so page ids are
 // `anaf-vat-v9`, not `apis/public/fiscal/anaf-vat-v9`. starlight-llms-txt matches
@@ -21,7 +34,10 @@ function slugsIn(dir) {
 }
 
 export default defineConfig({
-  site: 'https://ro-api-hub.dev',
+  // Public URL comes from site.config.mjs (SITE_URL env var, with a fallback).
+  site: SITE_ORIGIN,
+  base: BASE_PATH || undefined,
+  markdown: { remarkPlugins: [remarkBaseLinks] },
   integrations: [
     starlight({
       title: 'ro-api-hub',

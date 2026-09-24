@@ -6,7 +6,7 @@ hero:
   tagline: Toate API-urile din România. Un singur loc. Open-source.
   actions:
     - text: Vezi catalogul complet
-      link: /apis/
+      link: apis/
       icon: right-arrow
       variant: primary
     - text: GitHub
