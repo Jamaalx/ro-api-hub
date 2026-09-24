@@ -4,7 +4,7 @@ title: e-Guvernare.ro — Aggregator de servicii
 category: gov
 institution: Autoritatea pentru Digitalizarea României (ADR)
 country: RO
-status: stale
+status: suspended
 verified_at: 2026-05-27
 auth: qualified_cert
 protocol: REST/JSON
@@ -13,7 +13,7 @@ sandbox_available: false
 contract_required: false
 pricing: free
 rate_limit: unknown
-official_docs: https://www.e-guvernare.ro/
+official_docs: https://roepas.ro/
 api_base_url: https://www.e-guvernare.ro/
 last_known_version: "n/a"
 mandatory_for_business: false
@@ -63,7 +63,7 @@ HTML / signed PDF acknowledgements.
 
 ## Known issues / gotchas
 
-- **Link check 2026-09-24:** `official_docs` https://www.e-guvernare.ro/ → TIMEOUT (twice, ≥30 s apart). Needs a human to find the new URL.
+- **Replaced by ROePAS (2026-09-24):** `www.e-guvernare.ro` refuses connections on :443 (it still resolves). ADR launched **ROePAS** (`https://roepas.ro`) in production on 2026-03-12 as the single point of access for digital public services, migrating 5,000+ procedures from PCUe; from 2026-06-30 requests go through ROePAS. `official_docs` now points to ROePAS. The `edirect.e-guvernare.ro` sub-portal still answers.
 - Forms-only portal; no documented API.
 - Many listed services are external links to sector portals (ANAF, MAI, etc.).
 - Some flows require qualified certificate at signature time.
@@ -83,4 +83,6 @@ HTML / signed PDF acknowledgements.
 
 - Site: https://www.e-guvernare.ro/
 - Modern catalog: https://serviciipublice.gov.ro/
+- ROePAS launch announcement: https://roepas.ro/ro/w/romanian-digital-authority-launches-as-romania-s-single-access-point-for-public-services
+- ADR — ROePAS beta: https://www.adr.gov.ro/en/articole/lansarea-versiunii-beta-a-platformei-roepas---punct-unic-de-acces-la-serviciile-publice-digitale---testare-pentru-cetateni-administratii-companii
 - Last manual verification: 2026-05-27

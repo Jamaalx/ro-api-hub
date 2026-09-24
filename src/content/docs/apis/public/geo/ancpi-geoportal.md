@@ -4,7 +4,7 @@ title: ANCPI Geoportal (ArcGIS REST)
 category: geo
 institution: Agenția Națională de Cadastru și Publicitate Imobiliară (ANCPI)
 country: RO
-status: stale
+status: suspended
 verified_at: 2026-05-27
 auth: none
 protocol: ArcGIS_REST
@@ -66,8 +66,7 @@ curl 'https://geoportal.ancpi.ro/arcgis/rest/services/?f=json'
 
 ## Known issues / gotchas
 
-- **Link check 2026-09-24:** `api_base_url` https://geoportal.ancpi.ro/arcgis/rest/services/ → ENOTFOUND (twice, ≥30 s apart). Needs a human to find the new URL.
-- **Link check 2026-09-24:** `official_docs` https://geoportal.ancpi.ro/ → ENOTFOUND (twice, ≥30 s apart). Needs a human to find the new URL.
+- **Offline after the ANCPI ransomware attack (2026-09-24):** ANCPI's IT infrastructure was hit by ransomware on 2026-07-14. As of 2026-08-20 only e-Terra was restarted; ANCPI states that RTI, MyEterra, Registrul proprietarilor, Titluri de proprietate **and Geoportal** will be brought back in stages and each restart announced publicly. `geoportal.ancpi.ro` is NXDOMAIN (checked 2026-09-24). No alternative URL. When it returns, the INSPIRE view services were under `/inspireview/rest/services` as well as `/arcgis/rest/services`.
 - The HTML viewer is JS-rendered; WebFetch returned empty content in the 2026-05-27 sweep — use Playwright if scraping the UI
 - Layer IDs and folder names are not documented in one place; you must crawl the `/services/` catalogue
 - Some `MapServer` services may have `maxRecordCount` limits (commonly 1000) — paginate via `resultOffset`/`resultRecordCount`
@@ -91,4 +90,6 @@ curl 'https://geoportal.ancpi.ro/arcgis/rest/services/?f=json'
 
 - Official portal: https://geoportal.ancpi.ro/
 - ArcGIS REST API docs: https://developers.arcgis.com/rest/services-reference/
+- ANCPI notice (restart plan, 2026-08-20): https://www.ancpi.ro/
+- Government communiqué: https://gov.ro/ro/media/comunicate/functionalitatea-link-de-plata-in-aplicatia-e-terra-reactivata&page=1
 - Last manual verification: 2026-05-27

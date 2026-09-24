@@ -4,7 +4,7 @@ title: CivicHQ API — Code for Romania
 category: community
 institution: Code for Romania (NGO)
 country: RO
-status: stale
+status: suspended
 verified_at: 2026-05-27
 auth: none
 protocol: REST/JSON
@@ -65,7 +65,7 @@ curl 'https://api.civichq.org/v1/apps'
 
 ## Known issues / gotchas
 
-- **Link check 2026-09-24:** `api_base_url` https://api.civichq.org/ → ENOTFOUND (twice, ≥30 s apart). Needs a human to find the new URL.
+- **Service gone (2026-09-24):** `api.civichq.org` is NXDOMAIN and `civichq.org` is a parked lander. The project continues as **Centru Civic** (`https://www.centrucivic.ro/`), rebuilt as a React app (repo `code4romania/centrucivic`) whose data comes from Code for Romania's NGO Hub backend (`api.ngohub.ro`). NGO Hub does not publish a public API reference, so there is no documented replacement endpoint.
 - Abandoned since 2019 — endpoint may be offline.
 - Schema unlikely to be maintained.
 - For current civic-tech inventory, check Code for Romania's GitHub org directly.
@@ -84,4 +84,6 @@ curl 'https://api.civichq.org/v1/apps'
 
 - Repo: https://github.com/code4romania/civichq-api
 - Code for Romania: https://github.com/code4romania
+- Centru Civic (successor site): https://www.centrucivic.ro/
+- New frontend repo: https://github.com/code4romania/centrucivic
 - Last manual verification: 2026-05-27

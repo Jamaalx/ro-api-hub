@@ -71,7 +71,7 @@ Same SDKs as v9 — most have already removed v8 support or hidden it behind a d
 
 ## Known issues / gotchas
 
-- **Link check 2026-09-24:** `api_base_url` https://webservicesp.anaf.ro/AsynchWebService/api/v8/ws/tva → TIMEOUT (twice, ≥30 s apart). Needs a human to find the new URL.
+- **Timeout is expected (2026-09-24):** `webservicesp.anaf.ro` resolves and the v9 service on the same host answers, but the v8 async path no longer answers at all — consistent with the 2025-05-01 retirement. Nothing to fix; use v9.
 - **RETIRED 2025-05-01** — schedule migration immediately
 - v8 misses several fields added in v9 (`inregistrare_RTVAI`, full `adresa_*` blocks)
 - Async polling pattern was rarely needed since v9 batches 100 CUI synchronously

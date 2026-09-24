@@ -4,7 +4,7 @@ title: OTP Bank Romania Open Banking (PSD2)
 category: banks
 institution: OTP Bank Romania S.A.
 country: RO
-status: stale
+status: suspended
 verified_at: 2026-05-27
 auth: oauth2
 protocol: REST/JSON
@@ -65,7 +65,7 @@ curl -X GET 'https://devch.otpdirekt.ro/.../v1/accounts' \
 
 ## Known issues / gotchas
 
-- **Link check 2026-09-24:** `official_docs` https://devch.otpdirekt.ro/prod-devch/developer-portal/ → ENOTFOUND (twice, ≥30 s apart). Needs a human to find the new URL.
+- **Service gone (2026-09-24):** OTP Bank România was absorbed by Banca Transilvania; the merger took effect on **2025-02-28** and OTP customers became BT customers. `devch.otpdirekt.ro` and `www.otpbank.ro` no longer resolve. **Alternative:** Banca Transilvania's PSD2 API — see [bt-psd2](/bt-psd2/) (`https://apistorebt.ro/bt/sb/`).
 - Finqware 2024 benchmark — **3 of 16 RO bank PSD2 APIs broken in prod**
 - Hard cap: 4 background AISP refreshes per day per consent
 - Portal URL is awkward — easy to misroute
@@ -85,4 +85,6 @@ curl -X GET 'https://devch.otpdirekt.ro/.../v1/accounts' \
 
 - Official: https://devch.otpdirekt.ro/prod-devch/developer-portal/
 - Berlin Group: https://www.berlin-group.org/nextgenpsd2-downloads
+- BT press release (merger effective 2025-02-28): https://www.bancatransilvania.ro/news/comunicate-de-presa/otp-bank-romania-devine-banca-transilvania-in-28-februarie-2025
+- Successor PSD2 portal: https://apistorebt.ro/bt/sb/
 - Last manual verification: 2026-05-27

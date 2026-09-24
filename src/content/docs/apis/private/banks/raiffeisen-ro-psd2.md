@@ -13,7 +13,7 @@ sandbox_available: true
 contract_required: true
 pricing: free
 rate_limit: unknown
-official_docs: https://developer.raiffeisen.ro/
+official_docs: https://www.raiffeisen.ro/ro/persoane-fizice/in-sprijinul-tau/informatii-utile/platforma-de-testare-a-serviciilor-de-plata.html
 api_base_url: unknown
 last_known_version: "Berlin Group NextGenPSD2"
 mandatory_for_business: false
@@ -61,12 +61,12 @@ curl -X GET 'https://developer.raiffeisen.ro/.../v1/accounts' \
 
 ## Testing approach
 
-- [x] Sandbox at https://developer.raiffeisen.ro/
+- [ ] Sandbox was at https://developer-test.raiffeisen.ro/ (host gone, see Known issues)
 - [ ] Test QWAC required
 
 ## Known issues / gotchas
 
-- **Link check 2026-09-24:** `official_docs` https://developer.raiffeisen.ro/ → ENOTFOUND (twice, ≥30 s apart). Needs a human to find the new URL.
+- **Portal host gone, no replacement found (2026-09-24):** `developer.raiffeisen.ro` and `developer-test.raiffeisen.ro` are still CNAMEs to `branding.developer.eu-de.apiconnect.ibmcloud.com`, which no longer resolves — the IBM API Connect portal behind them is gone. The only official page still up is the bank's 2019 announcement of the PSD2 test platform (now `official_docs`). No new RO developer-portal URL was found on raiffeisen.ro; TPPs should ask the bank directly. The group-level portal `api.rbinternational.com` answers, but it is not documented as covering Romania.
 - Finqware 2024 benchmark — **3 of 16 RO bank PSD2 APIs broken in prod**
 - Premium APIs under contract
 
@@ -85,4 +85,6 @@ curl -X GET 'https://developer.raiffeisen.ro/.../v1/accounts' \
 
 - Official: https://developer.raiffeisen.ro/
 - Berlin Group: https://www.berlin-group.org/nextgenpsd2-downloads
+- Raiffeisen RO — PSD2 test platform announcement: https://www.raiffeisen.ro/ro/persoane-fizice/in-sprijinul-tau/informatii-utile/platforma-de-testare-a-serviciilor-de-plata.html
+- Old portal (dead): https://developer.raiffeisen.ro/
 - Last manual verification: 2026-05-27

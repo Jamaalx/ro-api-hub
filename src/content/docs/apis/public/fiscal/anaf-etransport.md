@@ -6,6 +6,7 @@ institution: ANAF / Ministerul Finanțelor
 country: RO
 status: active
 verified_at: 2026-05-27
+links_checked_at: 2026-09-24
 auth: oauth2
 protocol: REST/XML
 openapi_spec: partial
@@ -13,7 +14,7 @@ sandbox_available: true
 contract_required: false
 pricing: mandatory
 rate_limit: "unknown — fair-use"
-official_docs: https://static.anaf.ro/static/10/Anaf/Informatii_R/RO_e-Transport/Ghid_RO_e_Transport_2025.pdf
+official_docs: https://static.anaf.ro/static/10/Anaf/AsistentaContribuabili_r/Ghid_RO_e_Transport_2025.pdf
 api_base_url: https://api.anaf.ro/prod/ETRANSPORT/ws/v1
 last_known_version: "v1 (2025 schema)"
 mandatory_for_business: true
@@ -76,7 +77,7 @@ No mature e-Transport-specific SDK exists — most integrators extend an e-Factu
 
 ## Known issues / gotchas
 
-- **Link check 2026-09-24:** `official_docs` https://static.anaf.ro/static/10/Anaf/Informatii_R/RO_e-Transport/Ghid_RO_e_Transport_2025.pdf → HTTP 404. Needs a human to find the new URL.
+- **Guide moved (resolved 2026-09-24):** ANAF moved the 2025 guide from `/Informatii_R/RO_e-Transport/` (404) to `/AsistentaContribuabili_r/Ghid_RO_e_Transport_2025.pdf` (200).
 - Schema changed multiple times in 2024-2025 — make sure you use the **2025** XSDs
 - UIT becomes invalid if transport doesn't start within 5 calendar days — must STERGERE + re-submit
 - Modification window after submission is narrow — design UI for "draft → confirm" flow
@@ -99,6 +100,6 @@ No mature e-Transport-specific SDK exists — most integrators extend an e-Factu
 
 ## References
 
-- Ghid 2025 (canonical): https://static.anaf.ro/static/10/Anaf/Informatii_R/RO_e-Transport/Ghid_RO_e_Transport_2025.pdf
+- Ghid 2025 (canonical): https://static.anaf.ro/static/10/Anaf/AsistentaContribuabili_r/Ghid_RO_e_Transport_2025.pdf
 - Older OUG 115/2023 PDF (stale, do not link new content): https://mfinante.gov.ro/static/10/Mfp/GhidROe-Transport.pdf
 - Last manual verification: 2026-05-27

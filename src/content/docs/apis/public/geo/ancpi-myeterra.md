@@ -4,7 +4,7 @@ title: MyEterra (ANCPI cadastral portal)
 category: geo
 institution: Agenția Națională de Cadastru și Publicitate Imobiliară (ANCPI)
 country: RO
-status: gated
+status: suspended
 verified_at: 2026-05-27
 auth: qualified_cert
 protocol: REST/JSON
@@ -58,7 +58,7 @@ None known publicly. Some legal-tech vendors (notary software) bundle MyEterra i
 
 ## Known issues / gotchas
 
-- **Link check 2026-09-24:** `official_docs` https://myeterra.ancpi.ro/ → ENOTFOUND (twice, ≥30 s apart). Needs a human to find the new URL.
+- **Offline after the ANCPI ransomware attack (2026-09-24):** after the 2026-07-14 attack, ANCPI restarted only e-Terra (2026-08-11/20). MyEterra is on the list of platforms to be restarted "in stages" — `myeterra.ancpi.ro` is NXDOMAIN (checked 2026-09-24). No alternative; watch ancpi.ro for the restart announcement.
 - Closed user group — no public OpenAPI
 - Qualified cert must be installed in the browser/OS keystore for any access
 - Endpoint surface and request shapes are subject to change without public notice
@@ -78,4 +78,6 @@ None known publicly. Some legal-tech vendors (notary software) bundle MyEterra i
 
 - Portal: https://myeterra.ancpi.ro/
 - ANCPI: https://www.ancpi.ro/
+- ANCPI notice (restart plan, 2026-08-20): https://www.ancpi.ro/
+- Government communiqué: https://gov.ro/ro/media/comunicate/functionalitatea-link-de-plata-in-aplicatia-e-terra-reactivata&page=1
 - Last manual verification: 2026-05-27

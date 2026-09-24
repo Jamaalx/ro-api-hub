@@ -14,7 +14,7 @@ contract_required: true
 pricing: enterprise
 rate_limit: unknown
 official_docs: https://www.pago.ro/
-api_base_url: https://api.pago.ro/
+api_base_url: unknown
 last_known_version: unknown
 mandatory_for_business: false
 ---
@@ -70,7 +70,8 @@ curl -X POST 'https://api.pago.ro/oauth/token' \
 
 ## Known issues / gotchas
 
-- **Link check 2026-09-24:** `api_base_url` https://api.pago.ro/ → ENOTFOUND (twice, ≥30 s apart). Needs a human to find the new URL.
+- **API host gone (2026-09-24):** `api.pago.ro` no longer resolves and no public replacement base URL is published. Pago itself is still live (bills, RCA and travel insurance on pago.ro). Search engines index a Postman-hosted doc site at `https://docs.pago.ro/` (describes partner access with IP allow-listing + HTTP Basic auth, and a dev mode) but it answered **404** to us on 2026-09-24 — confirm the auth scheme with Pago before relying on the OAuth2 example below.
+- Pago bill-payment users were offered an "Import from Pago" into BT Pay (Banca Transilvania) in 2025 — see BT's Q&A.
 - Partner onboarding requires contract + AML/KYC review.
 - Insurer offer set rotates depending on Pago broker partner availability.
 - Token scopes differ for insurance vs bills vs payments.
@@ -95,4 +96,6 @@ curl -X POST 'https://api.pago.ro/oauth/token' \
 - Public site: https://www.pago.ro/
 - i-Asigurare: https://www.pago.ro/asigurari
 - Vodafone press (acquisition): https://www.vodafone.ro
+- Pago docs (Postman, 404 on 2026-09-24): https://docs.pago.ro/
+- BT Pay — Pago import: https://intreb.bancatransilvania.ro/cum-pot-sa-platesc-o-factura-din-bt-pay/
 - Last manual verification: 2026-05-27

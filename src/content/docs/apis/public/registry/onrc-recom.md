@@ -6,6 +6,7 @@ institution: Oficiul Național al Registrului Comerțului (ONRC)
 country: RO
 status: gated
 verified_at: 2026-05-27
+links_checked_at: 2026-09-24
 auth: contract
 protocol: REST/JSON
 openapi_spec: false
@@ -13,8 +14,8 @@ sandbox_available: false
 contract_required: true
 pricing: subscription
 rate_limit: unknown
-official_docs: https://portal.onrc.ro/
-api_base_url: https://portal.onrc.ro/
+official_docs: https://myportal.onrc.ro/
+api_base_url: https://myportal.onrc.ro/
 last_known_version: unknown
 mandatory_for_business: false
 ---
@@ -23,13 +24,13 @@ mandatory_for_business: false
 
 ## Overview
 
-RECOM Online is the National Trade Register Office's commercial-data portal, providing access to company records (status, capital, shareholders, financials, branches). The historical `www.onrc.ro` host currently shows a "Site under construction!" banner with stale 2020–2021 news; the live portal is `portal.onrc.ro`. Bulk programmatic access requires a paid subscription contract with ONRC.
+RECOM Online is the National Trade Register Office's commercial-data portal, providing access to company records (status, capital, shareholders, financials, branches). The online-services portal moved from `portal.onrc.ro` (no longer resolves) to `myportal.onrc.ro`; RECOM Online (furnizare informații) is reached from an account there. Bulk programmatic access requires a paid subscription contract with ONRC.
 
 ## Endpoints
 
 | Method | URL | Purpose |
 |--------|-----|---------|
-| GET | `https://portal.onrc.ro/` | Live portal |
+| GET | `https://myportal.onrc.ro/` | Live portal (account login; RECOM = "furnizare informații") |
 | GET | `https://www.onrc.ro/` | Stale landing ("Site under construction!") |
 
 Programmatic endpoints are exposed under contract; not publicly documented.
@@ -65,8 +66,8 @@ n/a
 
 ## Known issues / gotchas
 
-- **Link check 2026-09-24:** `official_docs` https://portal.onrc.ro/ → ENOTFOUND (twice, ≥30 s apart). Needs a human to find the new URL.
-- **`www.onrc.ro` shows a "Site under construction!" banner** with news items dated 2020–2021 — do **not** treat it as authoritative. Use `portal.onrc.ro` instead.
+- **Portal moved (resolved 2026-09-24):** `portal.onrc.ro` no longer resolves; ONRC's own site (www.onrc.ro) points to **`myportal.onrc.ro`** for all online services, incl. RECOM (contact recom@onrc.ro).
+- `www.onrc.ro` now carries current news (2026) and links to `myportal.onrc.ro` as the online-services portal.
 - Bulk access is paid — free tiers exist only via third-party aggregators
 - WAF-protected — automation requires realistic UA + cookie handling
 
@@ -83,7 +84,8 @@ n/a
 
 ## References
 
-- Live portal: https://portal.onrc.ro/
+- Live portal: https://myportal.onrc.ro/ (guide: https://myportal.onrc.ro/guide)
 - Stale landing: https://www.onrc.ro/
 - Open datasets (separate entry): https://data.gov.ro/organization/onrc
+- ONRC homepage (links to myportal): https://www.onrc.ro/index.php/ro/
 - Last manual verification: 2026-05-27
