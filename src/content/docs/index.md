@@ -21,11 +21,13 @@ Până acum, ca să integrezi API-uri românești trebuia să cauți prin 100 de
 
 ## Ce găsești aici
 
-- ✅ **67 API-uri active** verificate la zi
-- 🔒 18 servicii gated (contract / cert / WAF) — cu instrucțiuni cum accesezi
-- ⚠️ 18 servicii stale — marcate clar, cu alternative recomandate
-- ❌ 14 servicii fără API public — cu pattern de scraping (Playwright/Camoufox) ca fallback
-- 🚨 3 incidente critice (servicii suspendate / arhivate / URL-uri rupte)
+Numărătoare după câmpul `status:` din cele 124 de fișe (verificate 2026-05-27):
+
+- ✅ **91 API-uri active**
+- 🔒 9 servicii gated (contract / cert / WAF) — cu instrucțiuni cum accesezi
+- ⚠️ 10 servicii stale — marcate clar, cu alternative recomandate
+- ❌ 13 servicii fără API public — cu pattern de scraping (Playwright/Camoufox) ca fallback
+- 🚨 1 serviciu suspendat (RAR Auto Pass) — alte incidente (ex. URL ASF rupt) sunt notate pe fiecare fișă
 
 ## 27 categorii acoperite
 
