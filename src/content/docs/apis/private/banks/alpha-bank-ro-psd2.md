@@ -4,7 +4,7 @@ title: Alpha Bank Romania Open Banking (PSD2)
 category: banks
 institution: Alpha Bank Romania S.A.
 country: RO
-status: active
+status: suspended
 verified_at: 2026-05-27
 auth: oauth2
 protocol: REST/JSON
@@ -13,7 +13,7 @@ sandbox_available: true
 contract_required: true
 pricing: free
 rate_limit: unknown
-official_docs: https://www.openbankingtracker.com/api/alpha-bank-romania
+official_docs: https://www.unicredit.ro/ro/institutional/banca/fuziune-AlphaBank.html
 api_base_url: unknown
 last_known_version: "Berlin Group NextGenPSD2"
 mandatory_for_business: false
@@ -65,6 +65,7 @@ curl -X GET 'https://psd2.alphabank.ro/.../v1/accounts' \
 
 ## Known issues / gotchas
 
+- **Bank absorbed (2026-09-24):** Alpha Bank România merged into **UniCredit Bank S.A.** (merger by absorption, completed August 2025 — UniCredit's BVB notice of 2025-08-22). There is no separate Alpha Bank PSD2 interface any more. **Alternative:** UniCredit's group developer portal `https://developer.unicredit.eu/` (Berlin Group; UniCredit Bank S.A. – Romania has production APIs there). The old `official_docs` link is a third-party tracker that answers 429 (Vercel bot checkpoint) to scripts.
 - Finqware 2024 benchmark — **3 of 16 RO bank PSD2 APIs broken in prod** (Alpha frequently flagged for data quality)
 - Transaction-data fields are unstructured / free-text — parsing required
 - Developer portal less discoverable than peers
@@ -85,4 +86,7 @@ curl -X GET 'https://psd2.alphabank.ro/.../v1/accounts' \
 
 - Tracker: https://www.openbankingtracker.com/api/alpha-bank-romania
 - Berlin Group: https://www.berlin-group.org/nextgenpsd2-downloads
+- UniCredit — merger completed (BVB, 2025-08-22): https://www.bvb.ro/infocont/infocont25/UCB27_20250822153248_RO-Anunt-finalizare-fuziune.pdf
+- UniCredit merger info page: https://www.unicredit.ro/ro/institutional/banca/fuziune-AlphaBank.html
+- Successor PSD2 portal: https://developer.unicredit.eu/
 - Last manual verification: 2026-05-27

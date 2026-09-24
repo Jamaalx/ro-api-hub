@@ -6,6 +6,7 @@ institution: Urgent Cargus SA
 country: RO
 status: active
 verified_at: 2026-05-27
+links_checked_at: 2026-09-24
 auth: api_key
 protocol: REST/JSON
 openapi_spec: true
@@ -13,7 +14,7 @@ sandbox_available: false
 contract_required: true
 pricing: enterprise
 rate_limit: unknown
-official_docs: https://urgentcargus.portal.azure-api.net
+official_docs: https://urgentcargus.developer.azure-api.net/
 api_base_url: https://urgentcargus.azure-api.net
 last_known_version: "v1"
 mandatory_for_business: false
@@ -71,6 +72,7 @@ curl -X POST 'https://urgentcargus.azure-api.net/api/LoginUser' \
 
 ## Known issues / gotchas
 
+- **Portal moved (resolved 2026-09-24):** the legacy Azure APIM portal `urgentcargus.portal.azure-api.net` answers 503 (IIS "service unavailable"). Cargus's own API documentation v3 (2.3.2) points to the new portal **`https://urgentcargus.developer.azure-api.net/`** (register → subscribe to "UrgentOnlineAPI" → wait for approval → keys in profile). The API base `https://urgentcargus.azure-api.net/api` is unchanged.
 - Two-factor auth (subscription key + bearer) — easy to forget the key on retries.
 - AWB body is verbose; expects "Parcels" array with weights/dimensions.
 - Azure APIM returns 401 with no body on bad subscription key.
@@ -92,6 +94,7 @@ curl -X POST 'https://urgentcargus.azure-api.net/api/LoginUser' \
 
 ## References
 
-- Azure APIM portal: https://urgentcargus.portal.azure-api.net
+- Azure APIM developer portal: https://urgentcargus.developer.azure-api.net/ (the old `urgentcargus.portal.azure-api.net` legacy portal answers 503)
 - Public website: https://www.cargus.ro/
+- Cargus API documentation v3 2.3.2 (PDF): https://www.cargus.ro/wp-content/uploads/DocumentationAPIV3-2.3.2-EN.pdf
 - Last manual verification: 2026-05-27

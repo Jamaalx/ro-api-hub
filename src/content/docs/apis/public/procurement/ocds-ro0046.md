@@ -6,6 +6,7 @@ institution: ANAP / ADR (sub OGP RO)
 country: RO
 status: active
 verified_at: 2026-05-27
+links_checked_at: 2026-09-24
 auth: none
 protocol: REST/JSON
 openapi_spec: false
@@ -76,6 +77,7 @@ curl 'https://example-ocds-feed.ro/releases?date_from=2026-01-01'
 
 ## Known issues / gotchas
 
+- **Blocks bots, verified manually 2026-09-24:** the link checker gets HTTP 403 (Cloudflare "Just a moment…" challenge); the page exists for a human browser (Cloudflare JS challenge on opengovpartnership.org — passes in a normal browser). Not a dead link — keep it.
 - Pilot status — coverage incomplete, schema versions may shift.
 - Feed URL still being finalized.
 - Mapping SICAP fields → OCDS is non-trivial; cross-check definitions.

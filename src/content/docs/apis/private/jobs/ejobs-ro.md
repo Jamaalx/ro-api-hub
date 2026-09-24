@@ -6,6 +6,7 @@ institution: eJobs Group
 country: RO
 status: broken
 verified_at: 2026-05-27
+links_checked_at: 2026-09-24
 auth: none
 protocol: REST/JSON
 openapi_spec: false
@@ -58,6 +59,7 @@ N/A.
 
 ## Known issues / gotchas
 
+- **Blocks bots, verified manually 2026-09-24:** the link checker gets HTTP 403 (Cloudflare "Just a moment…" challenge); the page exists for a human browser (Cloudflare JS challenge — passes in a normal browser). Not a dead link — keep it.
 - No documented public API — verified 2026-05-27.
 - Site uses anti-bot (Cloudflare/Akamai); requires Camoufox or rotating proxies.
 - ToS prohibits unauthorized scraping at scale.

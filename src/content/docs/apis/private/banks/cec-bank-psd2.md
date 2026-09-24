@@ -6,6 +6,7 @@ institution: CEC Bank S.A. (state-owned)
 country: RO
 status: active
 verified_at: 2026-05-27
+links_checked_at: 2026-09-24
 auth: oauth2
 protocol: REST/JSON
 openapi_spec: true
@@ -65,6 +66,7 @@ curl -X GET 'https://psd2.cec.ro/.../v1/accounts' \
 
 ## Known issues / gotchas
 
+- **Blocks bots, verified manually 2026-09-24:** the link checker gets HTTP 403; the page exists for a human browser (answers 200 with a browser User-Agent; the page carries an anti-bot form). Not a dead link — keep it.
 - Finqware 2024 benchmark — **3 of 16 RO bank PSD2 APIs broken in prod**
 - State-owned: slower onboarding cadence
 

@@ -6,6 +6,7 @@ institution: Sameday Courier SRL (eMAG group)
 country: RO
 status: active
 verified_at: 2026-05-27
+links_checked_at: 2026-09-24
 auth: basic_auth
 protocol: REST/JSON
 openapi_spec: false
@@ -13,7 +14,7 @@ sandbox_available: true
 contract_required: true
 pricing: enterprise
 rate_limit: unknown
-official_docs: https://sameday-api.demo.zitec.com/documentation/client
+official_docs: https://github.com/sameday-courier/php-sdk
 api_base_url: https://api.sameday.ro
 last_known_version: "v1"
 mandatory_for_business: false
@@ -72,6 +73,7 @@ curl -X POST 'https://api.sameday.ro/api/authenticate' \
 
 ## Known issues / gotchas
 
+- **Docs behind HTTP Basic auth (2026-09-24):** `sameday-api.demo.zitec.com/documentation/client` answers 401 (`WWW-Authenticate: Basic`) to everyone, not just robots — you need credentials from Sameday. `official_docs` now points to Sameday's public, actively maintained PHP SDK (`docs/` folder; last push 2026-08), which documents the same API and the demo host.
 - Token endpoint differs between demo and prod (`api.sameday.ro` vs `sameday-api.demo.zitec.com`).
 - Pickup point IDs must be created in client portal first.
 - Locker list is large (~5k); cache locally for client-side widgets.
@@ -93,7 +95,8 @@ curl -X POST 'https://api.sameday.ro/api/authenticate' \
 
 ## References
 
-- Official docs: https://sameday-api.demo.zitec.com/documentation/client
+- Official PHP SDK + docs: https://github.com/sameday-courier/php-sdk (org `sameday-courier`, contact software@sameday.ro)
+- Demo API docs (HTTP Basic, needs Sameday credentials): https://sameday-api.demo.zitec.com/documentation/client
 - Locker SDK: https://cdn.sameday.ro/locker-plugin/techdoc.html
 - GitHub org: https://github.com/sameday-courier
 - Last manual verification: 2026-05-27

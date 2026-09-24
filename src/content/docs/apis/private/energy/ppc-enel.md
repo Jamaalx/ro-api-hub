@@ -6,6 +6,7 @@ institution: PPC Romania (formerly Enel) / Rețele Electrice (DSO)
 country: RO
 status: broken
 verified_at: 2026-05-27
+links_checked_at: 2026-09-24
 auth: none
 protocol: REST/JSON
 openapi_spec: false
@@ -13,8 +14,8 @@ sandbox_available: false
 contract_required: true
 pricing: enterprise
 rate_limit: unknown
-official_docs: https://www.ppcgroup.com/ro
-api_base_url: https://www.ppcgroup.com/ro
+official_docs: https://www.ppcenergy.ro/
+api_base_url: https://www.ppcenergy.ro/
 last_known_version: unknown
 mandatory_for_business: false
 ---
@@ -55,6 +56,7 @@ None.
 
 ## Known issues / gotchas
 
+- **Site moved (resolved 2026-09-24):** `www.ppcgroup.com/ro` answers **HTTP 500** (server error page, not a bot block). The Romanian customer site of PPC (ex-Enel) is **`https://www.ppcenergy.ro/`**, which replaced enel.ro on 2024-04-10; the customer app is myPPC. Still no public API.
 - No public API — verified 2026-05-27.
 - Self-care portal requires login + 2FA.
 - Prosumer settlement data only via PDF invoices.
@@ -76,6 +78,8 @@ None.
 
 ## References
 
-- Public site: https://www.ppcgroup.com/ro
+- Public site: https://www.ppcenergy.ro/ (replaced enel.ro on 2024-04-10)
+- Group site (answered 500 on 2026-09-24): https://www.ppcgroup.com/ro
 - DSO: https://www.reteleelectrice.ro/
+- PPC — brand history (acquisition of Enel RO): https://www.ppcenergy.ro/info-utile/achizitia-operatiunilor-grupul-ppc/
 - Last manual verification: 2026-05-27

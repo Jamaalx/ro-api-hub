@@ -56,6 +56,7 @@ None known.
 
 ## Known issues / gotchas
 
+- **Maintenance page after the ransomware attack (2026-09-24):** `eterra.ancpi.ro` answers 403 with an ANCPI "Acces restricționat — Mentenanță programată" page. ANCPI was hit by ransomware on 2026-07-14; e-Terra was restarted on 2026-08-11 (for authorised professionals and notaries) and the payment link re-enabled on 2026-08-20. Whether our 403 is the maintenance page for everyone or an IP filter could not be distinguished — check in a browser before relying on it.
 - **301 redirect**: `eterra.ancpi.ro` now redirects to MyEterra; do not hardcode the old host
 - Closed user group — no API contract published
 - Any third-party integration requires a formal partnership with ANCPI
@@ -75,4 +76,5 @@ None known.
 
 - Legacy portal: https://eterra.ancpi.ro/
 - Successor: https://myeterra.ancpi.ro/
+- ANCPI notice (2026-08-20): https://www.ancpi.ro/
 - Last manual verification: 2026-05-27

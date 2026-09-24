@@ -6,6 +6,7 @@ institution: Compania Națională de Administrare a Infrastructurii Rutiere (CNA
 country: RO
 status: broken
 verified_at: 2026-05-27
+links_checked_at: 2026-09-24
 auth: none
 protocol: REST/JSON
 openapi_spec: false
@@ -64,6 +65,7 @@ HTML page only.
 
 ## Known issues / gotchas
 
+- **Blocks bots, verified manually 2026-09-24:** the link checker gets HTTP 503 ("Verifying your browser…"); the page exists for a human browser (JavaScript browser-verification interstitial; the page is indexed as "Verificare Rovinieta | CNAIR" and erovinieta.ro answers 200). Not a dead link — keep it.
 - CNAIR landing page does not expose a check endpoint; it bounces to erovinieta.ro.
 - erovinieta.ro returns HTTP 403 to non-browser User-Agents (WAF).
 - CAPTCHA on the form prevents straightforward scraping.

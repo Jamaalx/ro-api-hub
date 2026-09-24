@@ -6,6 +6,7 @@ institution: Garanti Bank S.A. (BBVA group)
 country: RO
 status: active
 verified_at: 2026-05-27
+links_checked_at: 2026-09-24
 auth: oauth2
 protocol: REST/JSON
 openapi_spec: true
@@ -66,6 +67,7 @@ curl -X GET 'https://developers.garantibbva.ro/.../v1/accounts' \
 
 ## Known issues / gotchas
 
+- **Blocks bots, verified manually 2026-09-24:** the link checker gets HTTP 403 (Akamai "Access Denied"); the page exists for a human browser (the Layer7 API Developer Portal is indexed by search engines under this host with its sandbox → production onboarding; Akamai denies non-browser clients). Not a dead link — keep it.
 - Finqware 2024 benchmark — **3 of 16 RO bank PSD2 APIs broken in prod**
 - Layer7 portal sometimes rate-limits anonymous browsing
 - Smaller share of RO PSD2 traffic — less community tooling

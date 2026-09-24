@@ -65,6 +65,7 @@ n/a
 
 ## Known issues / gotchas
 
+- **Still down (2026-09-24):** `pro.rarom.ro/istoric_vehicul/dosar_vehicul.aspx` answers **HTTP 503** (IIS "Service Unavailable" — a real outage, not a bot block), and `www.rarom.ro` did not answer. The successor client app **RAR Auto-Pass** is up at `https://apps.rarom.ro/autopass-client/` (200) — certificate-based vehicle history, no public API. Status stays `suspended`.
 - **Service suspended** as of 2026-05-27 — no timeline for restoration.
 - PDF-only delivery historically; no JSON API ever published.
 - Mandatory-for-sale status created scraping pressure that may have triggered the suspension.
@@ -84,4 +85,5 @@ n/a
 
 - Portal (suspended): https://pro.rarom.ro/istoric_vehicul/dosar_vehicul.aspx
 - RAR: https://www.rarom.ro/
+- RAR Auto-Pass client: https://apps.rarom.ro/autopass-client/
 - Last manual verification: 2026-05-27

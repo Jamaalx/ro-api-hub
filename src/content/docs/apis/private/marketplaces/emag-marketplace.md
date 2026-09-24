@@ -6,6 +6,7 @@ institution: Dante International SA (eMAG)
 country: RO
 status: active
 verified_at: 2026-05-27
+links_checked_at: 2026-09-24
 auth: basic_auth
 protocol: REST/JSON
 openapi_spec: false
@@ -13,7 +14,7 @@ sandbox_available: false
 contract_required: true
 pricing: enterprise
 rate_limit: "3 req/s (documented)"
-official_docs: https://marketplace.emag.ro/documentation/api/external
+official_docs: https://marketplace-api.emag.ro/api-doc
 api_base_url: https://marketplace-api.emag.ro/api-3
 last_known_version: "v4.4"
 mandatory_for_business: false
@@ -74,6 +75,7 @@ curl -X POST 'https://marketplace-api.emag.ro/api-3/order/read' \
 
 ## Known issues / gotchas
 
+- **Docs moved (resolved 2026-09-24):** the old path `marketplace.emag.ro/documentation/api/external` answers 403 ("Request forbidden by administrative rules"). The API reference is now served at **`https://marketplace-api.emag.ro/api-doc`** (200, shows "Recent changes (v4.5.2)" and the public-IPs section), linked from eMAG's Infocenter.
 - Rate limit ~3 req/s — burst control mandatory.
 - All endpoints are POST; reads have body filters.
 - Offers may take minutes to propagate to PDP.
@@ -96,6 +98,8 @@ curl -X POST 'https://marketplace-api.emag.ro/api-3/order/read' \
 
 ## References
 
-- Official docs: https://marketplace.emag.ro/documentation/api/external
+- Official docs: https://marketplace-api.emag.ro/api-doc (v4.5.2 changelog on the page)
+- Infocenter page: https://marketplace.emag.ro/infocenter/emag-academy/how-to-add-a-product/product-import-through-api-or-feeds/api-documentation/?lang=en
+- Old docs path (403 to scripts): https://marketplace.emag.ro/documentation/api/external
 - Seller portal: https://marketplace.emag.ro/
 - Last manual verification: 2026-05-27

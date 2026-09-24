@@ -6,6 +6,7 @@ institution: Autoritatea Electorală Permanentă (AEP)
 country: RO
 status: active
 verified_at: 2026-05-27
+links_checked_at: 2026-09-24
 auth: none
 protocol: static_files
 openapi_spec: false
@@ -74,6 +75,7 @@ curl 'https://prezenta.roaep.ro/{cycle-slug}/data/json/sicpv/pv/pv_part.json' \
 
 ## Known issues / gotchas
 
+- **Blocks bots, verified manually 2026-09-24:** the link checker gets HTTP 418 ("Verifying your browser…"); the page exists for a human browser (JavaScript browser-verification interstitial in front of the site). Not a dead link — keep it.
 - SPA hides URL structure — first scrape requires discovering paths via DevTools.
 - Per-cycle URLs change; previous-election URLs persist as historical snapshots.
 - Polling-station-level data is large (10-100MB) per cycle.

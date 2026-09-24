@@ -6,6 +6,7 @@ institution: ADR / STS (operator Ghișeul)
 country: RO
 status: active
 verified_at: 2026-05-27
+links_checked_at: 2026-09-24
 auth: contract
 protocol: REST/JSON
 openapi_spec: false
@@ -65,6 +66,7 @@ HTML / receipts.
 
 ## Known issues / gotchas
 
+- **Blocks bots, verified manually 2026-09-24:** the link checker gets HTTP 403 (Cloudflare "Just a moment…" challenge); the page exists for a human browser (Cloudflare JS challenge — passes in a normal browser). Not a dead link — keep it.
 - WAF blocks default UAs (HTTP 403 verified 2026-05-27).
 - Citizen-facing flows include CAPTCHA / friction by design.
 - Institutional integration is contract-only; technical docs are NDA.
