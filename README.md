@@ -10,8 +10,8 @@ An open-source catalogue of Romanian APIs — public sector (ANAF, BNR, ONRC, CN
 
 | | |
 |---|---|
-| **125 service files** | [`src/content/docs/apis/`](./src/content/docs/apis) — read them on GitHub, grep them, feed them to an LLM |
-| **`catalog.json`** | one JSON index of all 125 services, committed at the repo root → [raw URL](https://raw.githubusercontent.com/Jamaalx/ro-api-hub/main/catalog.json) · [JSON Schema](./public/catalog.schema.json) |
+| **127 service files** | [`src/content/docs/apis/`](./src/content/docs/apis) — read them on GitHub, grep them, feed them to an LLM |
+| **`catalog.json`** | one JSON index of all 127 services, committed at the repo root → [raw URL](https://raw.githubusercontent.com/Jamaalx/ro-api-hub/main/catalog.json) · [JSON Schema](./public/catalog.schema.json) |
 | **Link checker** | [`scripts/check-apis.mjs`](./scripts/check-apis.mjs) — last run: [`reports/links-2026-09-24.md`](./reports/links-2026-09-24.md) |
 | **Static site (optional)** | Astro Starlight: search, sidebar, `llms.txt`. Run it locally with `npm run dev`; not published anywhere yet |
 
@@ -62,9 +62,9 @@ Up to 100 CUIs per call, ~1 req/s. The file lists the response shape, the SDKs t
 |---|---|---:|---:|
 | public | [Elections (AEP)](https://github.com/Jamaalx/ro-api-hub/tree/main/src/content/docs/apis/public/elections) | 1 | 1 |
 | public | [Finance (BNR, ASF, BVB)](https://github.com/Jamaalx/ro-api-hub/tree/main/src/content/docs/apis/public/finance) | 8 | 5 |
-| public | [Fiscal (ANAF)](https://github.com/Jamaalx/ro-api-hub/tree/main/src/content/docs/apis/public/fiscal) | 10 | 8 |
+| public | [Fiscal (ANAF)](https://github.com/Jamaalx/ro-api-hub/tree/main/src/content/docs/apis/public/fiscal) | 11 | 9 |
 | public | [Geo / meteo (ANCPI, ANM, ANAR)](https://github.com/Jamaalx/ro-api-hub/tree/main/src/content/docs/apis/public/geo) | 9 | 6 |
-| public | [Gov portals](https://github.com/Jamaalx/ro-api-hub/tree/main/src/content/docs/apis/public/gov) | 3 | 2 |
+| public | [Gov portals](https://github.com/Jamaalx/ro-api-hub/tree/main/src/content/docs/apis/public/gov) | 4 | 3 |
 | public | [Health (CNAS)](https://github.com/Jamaalx/ro-api-hub/tree/main/src/content/docs/apis/public/health) | 4 | 4 |
 | public | [Identity (ROeID, STS)](https://github.com/Jamaalx/ro-api-hub/tree/main/src/content/docs/apis/public/identity) | 3 | 2 |
 | public | [Justice](https://github.com/Jamaalx/ro-api-hub/tree/main/src/content/docs/apis/public/justice) | 2 | 2 |
@@ -88,7 +88,7 @@ Up to 100 CUIs per call, ~1 req/s. The file lists the response shape, the SDKs t
 | — | [Aggregators](https://github.com/Jamaalx/ro-api-hub/tree/main/src/content/docs/apis/aggregators) | 9 | 7 |
 | — | [Community SDKs / datasets](https://github.com/Jamaalx/ro-api-hub/tree/main/src/content/docs/apis/community) | 9 | 5 |
 
-Status totals (from the frontmatter, after the 2026-09-24 link check): **86 active · 11 stale · 8 gated · 13 broken (no public API) · 7 suspended**. The full editorial index with notes per service is [`apis/index.md`](./src/content/docs/apis/index.md).
+Status totals (from the frontmatter, after the 2026-09-24 link check): **88 active · 11 stale · 8 gated · 13 broken (no public API) · 7 suspended**. The full editorial index with notes per service is [`apis/index.md`](./src/content/docs/apis/index.md).
 
 ### For LLMs and agents
 

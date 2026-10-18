@@ -5,7 +5,7 @@
   "license": "CC-BY-4.0",
   "source": "https://github.com/Jamaalx/ro-api-hub",
   "site_url": null,
-  "count": 125,
+  "count": 127,
   "services": [
     {
       "slug": "aep-prezenta",
@@ -68,6 +68,27 @@
       "verified_at": "2026-05-27",
       "links_checked_at": null,
       "source_url": "https://github.com/Jamaalx/ro-api-hub/blob/main/src/content/docs/apis/private/banks/alpha-bank-ro-psd2.md",
+      "page_url": null
+    },
+    {
+      "slug": "anaf-bilant",
+      "name": "ANAF Annual Financial Statements Web Service (bilanț)",
+      "category": "fiscal",
+      "sector": "public",
+      "institution": "ANAF (Agenția Națională de Administrare Fiscală)",
+      "status": "active",
+      "auth": "none",
+      "protocol": "REST/JSON",
+      "sandbox_available": false,
+      "contract_required": false,
+      "openapi_spec": false,
+      "pricing": "free",
+      "official_docs": "https://static.anaf.ro/static/10/Anaf/Informatii_R/doc_WS_Bilant_V1.txt",
+      "api_base_url": "https://webservicesp.anaf.ro/bilant",
+      "api_base_url_note": null,
+      "verified_at": "2026-10-18",
+      "links_checked_at": null,
+      "source_url": "https://github.com/Jamaalx/ro-api-hub/blob/main/src/content/docs/apis/public/fiscal/anaf-bilant.md",
       "page_url": null
     },
     {
@@ -1580,6 +1601,27 @@
       "verified_at": "2026-05-27",
       "links_checked_at": "2026-09-24",
       "source_url": "https://github.com/Jamaalx/ro-api-hub/blob/main/src/content/docs/apis/public/opendata/govro-github.md",
+      "page_url": null
+    },
+    {
+      "slug": "guvernanta-gov-ro",
+      "name": "guvernanta.gov.ro: State-Owned Company Governance Registry",
+      "category": "gov",
+      "sector": "public",
+      "institution": "Guvernul României",
+      "status": "active",
+      "auth": "none",
+      "protocol": "static_files",
+      "sandbox_available": false,
+      "contract_required": false,
+      "openapi_spec": false,
+      "pricing": "free",
+      "official_docs": "https://guvernanta.gov.ro/",
+      "api_base_url": "https://guvernanta.gov.ro/data/registry.json",
+      "api_base_url_note": null,
+      "verified_at": "2026-10-18",
+      "links_checked_at": null,
+      "source_url": "https://github.com/Jamaalx/ro-api-hub/blob/main/src/content/docs/apis/public/gov/guvernanta-gov-ro.md",
       "page_url": null
     },
     {

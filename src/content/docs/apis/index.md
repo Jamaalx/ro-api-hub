@@ -1,11 +1,11 @@
 ---
 title: Catalog complet (master index)
-description: 125 servicii API românești în 27 de categorii — status, autentificare, endpoint-uri și linkuri către fișa fiecăruia.
+description: 127 servicii API românești în 27 de categorii — status, autentificare, endpoint-uri și linkuri către fișa fiecăruia.
 sidebar:
   order: 0
 ---
 
-> 125 per-service MDs across 27 categories. One file per API/service. All use the YAML frontmatter schema in `../templates/api-service.md` — parsable by downstream agents (Playwright probes, OpenAPI generators, MCP wrappers, tutorial pipelines).
+> 127 per-service MDs across 27 categories. One file per API/service. All use the YAML frontmatter schema in `../templates/api-service.md` — parsable by downstream agents (Playwright probes, OpenAPI generators, MCP wrappers, tutorial pipelines).
 
 **Verified at:** 2026-05-27
 
@@ -19,12 +19,13 @@ sidebar:
 
 ---
 
-## PUBLIC SECTOR (67)
+## PUBLIC SECTOR (69)
 
-### Fiscal (10) — `apis/public/fiscal/`
+### Fiscal (11) — `apis/public/fiscal/`
 | Status | File | Notes |
 |--------|------|-------|
 | ✅ | [anaf-vat-v9](/anaf-vat-v9/) | Current ANAF VAT/CUI verification |
+| ✅ | [anaf-bilant](/anaf-bilant/) | Annual financial statements per CUI, keyless; indicator codes differ by form |
 | ⚠️ | [anaf-vat-v8-async](/anaf-vat-v8-async/) | v8 retired 2025-05-01 — migrate to v9 |
 | ✅ | [anaf-efactura-prod](/anaf-efactura-prod/) | Mandatory B2B; OAuth2 + qualified cert |
 | ✅ | [anaf-efactura-test](/anaf-efactura-test/) | Sandbox |
@@ -103,12 +104,13 @@ sidebar:
 | ✅ | [sts-ca](/sts-ca/) | Qualified certs CA |
 | 🔒 | [depabd](/depabd/) | Inter-institutional only |
 
-### Gov (3) — `apis/public/gov/`
+### Gov (4) — `apis/public/gov/`
 | Status | File | Notes |
 |--------|------|-------|
 | 🔒 | [ghiseul-snep](/ghiseul-snep/) | Institution enrollment; 8.5M tx/2024 |
 | 🚨 | [e-guvernare](/e-guvernare/) | Replaced by ROePAS (roepas.ro, March 2026) |
 | ✅ | [catalog-servicii-publice](/catalog-servicii-publice/) | 2900+ services |
+| ✅ | [guvernanta-gov-ro](/guvernanta-gov-ro/) | Boards, pay and mandates of central state-owned companies, one static JSON |
 
 ### Open Data (2) — `apis/public/opendata/`
 | Status | File | Notes |
@@ -267,13 +269,13 @@ All ❌ broken (no public API). Tutorials → Playwright/Camoufox scraping.
 
 ---
 
-## Status totals (125)
+## Status totals (127)
 
 From the `status:` frontmatter of the service files (after the 2026-09-24 link check):
 
 | Status | Count |
 |--------|-------|
-| ✅ active | 86 |
+| ✅ active | 88 |
 | ⚠️ stale | 11 |
 | 🔒 gated | 8 |
 | ❌ broken / no public API | 13 |
