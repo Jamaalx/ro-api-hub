@@ -1,6 +1,6 @@
 ---
 slug: guvernanta-gov-ro
-title: guvernanta.gov.ro: State-Owned Company Governance Registry
+title: "guvernanta.gov.ro: State-Owned Company Governance Registry"
 category: gov
 institution: Guvernul României
 country: RO

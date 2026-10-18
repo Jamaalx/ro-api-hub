@@ -1,11 +1,11 @@
 ---
 title: Catalog complet (master index)
-description: 127 servicii API românești în 27 de categorii — status, autentificare, endpoint-uri și linkuri către fișa fiecăruia.
+description: 128 servicii API românești în 27 de categorii — status, autentificare, endpoint-uri și linkuri către fișa fiecăruia.
 sidebar:
   order: 0
 ---
 
-> 127 per-service MDs across 27 categories. One file per API/service. All use the YAML frontmatter schema in `../templates/api-service.md` — parsable by downstream agents (Playwright probes, OpenAPI generators, MCP wrappers, tutorial pipelines).
+> 128 per-service MDs across 27 categories. One file per API/service. All use the YAML frontmatter schema in `../templates/api-service.md` — parsable by downstream agents (Playwright probes, OpenAPI generators, MCP wrappers, tutorial pipelines).
 
 **Verified at:** 2026-05-27
 
@@ -95,7 +95,7 @@ sidebar:
 | Status | File | Notes |
 |--------|------|-------|
 | ✅ | [portal-just-ecris](/portal-just-ecris/) | SOAP at portalquery.just.ro |
-| ✅ | [monitorul-oficial](/monitorul-oficial/) | 2 lei/pagină |
+| ✅ | [monitorul-oficial](/monitorul-oficial/) | Part IV search by CUI and PDFs free for 10 days; archive 2 lei/pagină |
 
 ### Identity (3) — `apis/public/identity/`
 | Status | File | Notes |
@@ -254,7 +254,7 @@ All ❌ broken (no public API). Tutorials → Playwright/Camoufox scraping.
 | ✅ | [aperta-sync-anaf-simulator](/aperta-sync-anaf-simulator/) | Local dev simulator |
 | ✅ | [eranova-datacore](/eranova-datacore/) | REST cache proxy |
 
-## COMMUNITY (9) — `apis/community/`
+## COMMUNITY (10) — `apis/community/`
 | Status | File | Notes |
 |--------|------|-------|
 | ⭐ | [florin-szilagyi-efactura-sdk](/florin-szilagyi-efactura-sdk/) | **Already bundles MCP server** |
@@ -266,16 +266,17 @@ All ❌ broken (no public API). Tutorials → Playwright/Camoufox scraping.
 | ✅ | [gov2-ro-tempo-dump](/gov2-ro-tempo-dump/) | FastAPI + DuckDB + Parquet |
 | ⚠️ | [gov2-ro-prezenta-dump](/gov2-ro-prezenta-dump/) | Stale 2024 |
 | ⚠️ | [mihai3332001-oauth2-anaf](/mihai3332001-oauth2-anaf/) | Stale 2023 |
+| ✅ | [companiidestat-ro](/companiidestat-ro/) | State-owned companies: financials 2019–2025, AMEPIP sheets, pay; static JSON + OpenAPI |
 
 ---
 
-## Status totals (127)
+## Status totals (128)
 
 From the `status:` frontmatter of the service files (after the 2026-09-24 link check):
 
 | Status | Count |
 |--------|-------|
-| ✅ active | 88 |
+| ✅ active | 89 |
 | ⚠️ stale | 11 |
 | 🔒 gated | 8 |
 | ❌ broken / no public API | 13 |
